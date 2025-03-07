@@ -11,6 +11,9 @@ section{
 .sub-hero{
     font-size: 1.5rem;
 }
+.btn-hero-container:hover{
+    color: #ffff;
+}
 .btn-hero:hover{
     background-color: black !important;
     color: #ffff;

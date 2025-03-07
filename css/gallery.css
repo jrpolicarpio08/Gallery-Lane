@@ -1,0 +1,57 @@
+.carousel-item{
+    height: 100vh;
+}
+.carousel-indicators [data-bs-target] {
+    text-indent: 0!important;
+    height: 2rem;
+    width: 4rem;
+    background-color: transparent !important;
+    opacity: 1;
+}
+.carousel-indicators .active {
+    border-bottom: black 2px solid!important;
+    transition: 1s;
+}
+.carousel-nav{
+    position: absolute;
+    top:  0;
+    left: inherit;
+    right: -12%;
+}
+.gallery{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../assets/images/cyberphoto.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.abt-page{
+    padding: 3rem;
+}
+.abt-img{
+    height: 100%;
+    background: url("../assets/images/abt-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.abt-title{
+    font-size: 5rem;
+}
+.abt-p{
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+}
+@media screen and (min-width: 360px) and (max-width: 1279px) { 
+    .about{
+         margin-top: 1rem;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 2rem;
+    }
+    .carousel-indicators .active {
+        color: red;
+        border-bottom: transparent 0px solid!important;
+        transition: 1s;
+    }
+  } 
+  
