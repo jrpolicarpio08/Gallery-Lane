@@ -9,8 +9,9 @@
     opacity: 1;
 }
 .carousel-indicators .active {
+    color: red !important;
     border-bottom: black 2px solid!important;
-    transition: 1s;
+    transition: 0.5s;
 }
 .carousel-nav{
     position: absolute;
@@ -19,16 +20,29 @@
     right: -12%;
 }
 .gallery{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../assets/images/cyberphoto.png");
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../assets/images/cyberphoto.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.home-btn{
+    border: solid white;
+}
+.home-btn:hover{
+    border: solid white !important;
+    background-color: white !important;
+    color: black !important;
+}
+.home-abt-btn-container{
+    position: absolute;
+    
 }
 .abt-page{
     padding: 3rem;
 }
 .abt-img{
     height: 100%;
+    object-fit: cover;
     background: url("../assets/images/abt-img.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -38,8 +52,12 @@
     font-size: 5rem;
 }
 .abt-p{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.5rem;
+}
+.home-abt-btn-container{ 
+   position: relative;
+   z-index: 10;
 }
 @media screen and (min-width: 360px) and (max-width: 1279px) { 
     .about{

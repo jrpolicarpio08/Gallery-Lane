@@ -20,27 +20,27 @@
         <div id="carouselExampleIndicators" class="carousel slide">
 
           <div class="carousel-indicators carousel-nav">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
-              <span class="d-none d-sm-block">Home</span>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+              <span class="d-none d-sm-block font-bold">Home</span>
               <span class="d-sm-block d-md-none d-lg-none">
                 <i class="fa-solid fa-house"></i>
               </span>
             </button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2">
-              <span class="d-none d-sm-block">About</span>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"  aria-current="true" aria-label="Slide 2">
+              <span class="d-none d-sm-block font-bold">About</span>
               <span class="d-sm-block d-md-none d-lg-none">
                 <i class="fa-solid fa-house"></i>
               </span>
             </button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3">
-              <span class="d-none d-sm-block">Gallery</span>
+              <span class="d-none d-sm-block font-bold">Gallery</span>
               <span class="d-sm-block d-md-none d-lg-none">
                 <i class="fa-solid fa-house"></i>
               </span>
             </button>
             </button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4">
-              <span class="d-none d-sm-block">Contact</span>
+              <span class="d-none d-sm-block font-bold">Contact</span>
               <span class="d-sm-block d-md-none d-lg-none">
                 <i class="fa-solid fa-house"></i>
               </span>
@@ -50,24 +50,36 @@
 
           <div class="carousel-inner">
 
-            <div class="carousel-item p-5">
-              <div class="bg-success mt-2 px-3 pt-2 h-50 gallery">
-                <div class="">Gallery</div>
+            <div class="carousel-item p-5 active">
+              <div class="text-white pl-5 mt-2 md:pl-10 h-50 gallery animate__animated animate__fadeInDownBig animate__delay-0.5s">
+                <div class="font-semibold text-[2.5rem] md:text-[5rem] gallery-hero-title">Gallery Lane</div>
+                <div class="text-[1.5rem] md:pt-1 md:mx-12 md:pl-3 md:pb-1.5 md:border-l-4 md:leading-9 md:text-[2rem]"> Collection Of Frozen Time<br> Virtual Photography</div>
+                <div class="md:mt-3 md:pl-3">
+                  <button type="button" class="btn border-2 text-white w-45 home-btn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"><span class="font-bold">Explore</span></button>
+                </div>
               </div>
               <div class="flex flex-col md:flex-row h-50 mt-3">
-                <div class="bg-danger w-full h-100 md:w-3/4 p-4">test</div>
-                <div class="bg-warning w-full h-100 md:w-1/4 md:ml-4 about p-4">test</div>
+                <div class="bg-danger w-full flex h-100 md:w-3/4 animate__animated animate__fadeInLeftBig animate__delay-1s">
+
+                </div>
+                <div class="bg-warning justify-center items-center w-full flex h-100 md:w-1/4 md:ml-4 about">
+                  <div class="home-abt-btn-container">
+                    <div class="btn">test</div>
+                  </div>
+                </div>
               </div>
 
             </div>
 
-            <div class="carousel-item abt-page active">
+            <div class="carousel-item abt-page">
 
               <div class="flex flex-col md:flex-row h-100">
-                <div class="abt-img w-full md:w-1/2 md:p-4 d-none d-sm-block"></div>
-                <div class="about w-full h-100 -p-1 md:w-1/2 md:ml-4 md:p-4">
-                  <div class="abt-title md:mt-20">About</div>
-                  <p class="text-start abt-p">I have created this website not only to be included in my portfolio this website will also showcase the photography pieces that I have taken in the games that I played every day. Photography can be anything we just need to look at it properly. The subject does not matter everything can be a subject in photography, and that is the sole reason why I created this website—to show the world that no matter how bad or how good the graphics are, all we need is just the right angle and creativity to produce great photography.</p>
+                <div class="abt-img w-full md:w-1/2 md:p-4 d-none d-sm-block gallery animate__animated animate__fadeInDownBig animate__delay-1s"></div>
+                <div class="w-full h-100 -p-1 md:w-1/2 md:ml-4 md:p-4 animate__animated animate__fadeInUpBig animate__delay-1s">
+                  <div class="abt-title md:mt-20 md:font-bold">About</div>
+                  <p class="text-start font-thin abt-p">this website is not just a project to be included in my portfolio, this website will also showcase my photography collection that I have taken in the virtual world that I explored.</p>
+                  <P class="text-start font-thin abt-p">Photography can be anything we just need to look at it properly. The subject does not matter everything can be a subject in photography. that's why I created this website to show the world that no matter how bad or how good the graphics are, all we need is just the right angle and creativity to produce great photography.</P>
+                  <P class="text-start font-thin abt-p">that's why I created this website to show the world that no matter how bad or how good the graphics are, all we need is just the right angle and creativity to produce great photography.</P>
                 </div>
               </div>
               
