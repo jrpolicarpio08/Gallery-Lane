@@ -2,6 +2,8 @@
     height: 100vh;
 }
 .carousel-indicators [data-bs-target] {
+    z-index: 100;
+    position: relative;
     text-indent: 0!important;
     height: 2rem;
     width: 4rem;
@@ -19,22 +21,39 @@
     left: inherit;
     right: -12%;
 }
-.gallery{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../assets/images/cyberphoto.png");
+.main-box{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.home-btn{
+.main-box-btn{
     border: solid white;
 }
-.home-btn:hover{
+.main-box-btn:hover{
     border: solid white !important;
     background-color: white !important;
     color: black !important;
 }
-.home-abt-btn-container{
-    position: absolute;
+/* .feature-box{
+} */
+.about-box{
+    animation: fadeInUpBig;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+.about-box-btn{
+    color: white;
+    font-size: 2rem;
+}
+.about-box-btn:hover{
+    color: rgba(255, 255, 255, 0.735);
+}
+.latest-page{
+    height: 100%;
+    background-image: radial-gradient(circle, #ffffff, #e9e9e9, #d3d3d3, #bdbdbd, #a8a8a8);
+}
+.photo-bg{
     
 }
 .abt-page{
@@ -60,9 +79,6 @@
    z-index: 10;
 }
 @media screen and (min-width: 360px) and (max-width: 1279px) { 
-    .about{
-         margin-top: 1rem;
-    }
     .carousel-indicators [data-bs-target] {
         width: 2rem;
     }
@@ -70,6 +86,13 @@
         color: red;
         border-bottom: transparent 0px solid!important;
         transition: 1s;
+    }
+    .about-box{
+        margin-top: 1rem;
+   }
+   .abt-p{
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
   } 
   
