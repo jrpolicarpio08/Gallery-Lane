@@ -1,9 +1,15 @@
+.logo{
+    z-index: 100 !important;
+    position: absolute;
+    top:  1%;
+    right: inherit;
+    left: 1%;
+}
 .carousel-item{
     height: 100vh;
     overflow: hidden;
 }
 .carousel-indicators [data-bs-target] {
-    z-index: 100;
     position: relative;
     text-indent: 0!important;
     height: 2rem;
@@ -17,6 +23,8 @@
     transition: 0.5s;
 }
 .carousel-nav{
+    height: 1.6rem;
+    z-index: 100 !important;
     position: absolute;
     top:  0;
     left: inherit;
@@ -61,23 +69,33 @@
     animation-duration: 2s !important;
     animation-timing-function: ease-in-out !important;
  }
+ .latest-photo-container:hover .latest-img{
+    opacity: 0.5;
+    transition: 0.3s;
+ }
  .latest-photo-details{
     animation: fadeInRight !important;
     animation-duration: 2s !important;
-    animation-timing-function: ease-in-out !important
-    ;
+    animation-timing-function: ease-in-out !important;
  }
-.latest-photo-title-btn{
-    margin-left: -0.75rem;
-    z-index: 21 !important;
-    text-decoration: none !important;
-    font-weight: bold !important;
-    font-size: 2.5rem !important;
-    color: white !important;
-}
-.latest-photo-title-btn:hover{
-    color: rgba(255, 255, 255, 0.549) !important;
-}
+ .modal-btn-group{
+    position: absolute;
+    top:  50%;
+    left: inherit;
+    right: 1rem;
+    transform: translate(-50% , -50%);
+ }
+ .modal-photo-title{
+    animation: fadeInRight !important;
+    animation-duration: 1s !important;
+    animation-timing-function: ease-in-out !important;
+ }
+ .modal-photo-details{
+    background: rgba(51, 170, 51, .7);  
+    animation: fadeInDown !important;
+    animation-duration: 1s !important;
+    animation-timing-function: ease-in-out !important;
+ }
 .abt-page{
     padding: 3rem;
 }
@@ -102,12 +120,21 @@
 }
 @media screen and (min-width: 360px) and (max-width: 1279px) { 
     .carousel-indicators [data-bs-target] {
-        width: 2rem;
+        width: 1.5rem;
     }
     .carousel-indicators .active {
         color: red;
         border-bottom: transparent 0px solid!important;
         transition: 1s;
+    }
+    .carousel-nav{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 100;
     }
     .about-box{
         margin-top: 1rem;

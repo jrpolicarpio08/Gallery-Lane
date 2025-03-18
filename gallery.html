@@ -18,9 +18,11 @@
     <section>
       <div>
         <div id="carouselExampleIndicators" class="carousel slide">
-
+          <div class="logo d-none d-lg-block">
+            <img class="" src="./assets/icons/gallery-lane-icon.svg" width="60" height="60">
+          </div>
           <div class="carousel-indicators carousel-nav">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1">
               <span class="d-none d-sm-block font-bold">Home</span>
               <span class="d-sm-block d-md-none d-lg-none">
                 <i class="fa-solid fa-house"></i>
@@ -44,13 +46,11 @@
                 <i class="fa-solid fa-house"></i>
               </span>
             </button>
-            </button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5">
               <span class="d-none d-sm-block font-bold">Contact</span>
               <span class="d-sm-block d-md-none d-lg-none">
                 <i class="fa-solid fa-house"></i>
               </span>
-            </button>
             </button>
           </div>
 
@@ -80,58 +80,81 @@
               </div>
             </div>
 
-            <div class="carousel-item md:pt-14 md:px-13 md:pb-6 active">
-              <div class="flex justify-center items-center latest-page p-5">
-                <div class="photo-bg flex justify-start items-end md:w-[50rem] xxl: bg-white shadow-2xl shadow-gray-950 p-3">
-                  <div class="spotlight-container absolute inset-0 m-auto z-20 w-[30rem] animate__animated animate__fadeInDown animate__delay-0.5s">
+            <div class="carousel-item active">
+              <div class="flex justify-center items-center latest-page p-3">
+                <div class="photo-bg flex justify-start items-end md:w-[50rem] 2xl:w-[100rem] xxl: bg-white shadow-2xl shadow-gray-950 p-3">
+                  <div class="spotlight-container absolute inset-0 m-auto z-10 pointer-events-none md:w-[30rem] 2xl:w-[60rem] animate__animated animate__fadeInDown animate__delay-0.5s">
                     <img src="./assets/images/sl.png">
                   </div>
                   <div class="latest-photo-container relative items-center">
-                    <img class="" src="./assets/images/latest.png" width="100%">
-                    <div class="latest-photo-details px-4 text-white md:absolute md:bottom-6 md:leading-5 z-30">
-                      <button data-bs-toggle="modal" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" class="btn border-0 latest-photo-title-btn"><span class="font-bold text-[1.9rem]">Alfa Romeo Stelvio</span></button>                      
-                      <div class="text-[1rem] md:mx-[0.22rem] md:-mt-2 font-semibold"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
+                    <input data-bs-toggle="modal" data-bs-target="#exampleModalToggle" class="latest-img" data-bs-toggle="modal" width="100%" type="image" src="./assets/images/latest.png">
+                    <div class="latest-photo-details px-4 text-white md:absolute md:bottom-6 md:leading-10 pointer-events-none">
+                      <div class="font-bold text-[1.9rem] 2xl:text-[4rem]">Alfa Romeo Stelvio</div>
+                      <div class="text-[1rem] font-semibold md:mx-[0.22rem] md:-mt-2 2xl:text-[2rem]"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
                     </div>
                   </div>
                 </div>
               </div>
               <!-- modal section -->
-              <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <!-- <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
                   <div class="modal-content" style="border-radius: 0px;">
                     <div class="modal-body">
                       <div>
                         <img class="" src="./assets/images/latest.png" width="100%">
                       </div>
-                      <div class="">
-                        <div class="font-bold text-[1.9rem]">Alfa Romeo Stelvio</div>
-                        <div class="text-[1rem] md:mx-[0.22rem] md:-mt-2 font-semibold"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
-                        <div class="">
-                          <p></p>
+                      <div class="modal-btn-group">
+                        <div class="mb-3">
+                          <button class="btn btn-primary">test</button>
+                        </div>
+                        <div class="mb-3">
+                          <button class="btn btn-primary">test</button>
+                        </div>
+                        <div class="mb-3">
+                          <button class="btn btn-primary">test</button>
                         </div>
                       </div>
-                    </div>
-                    <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button> -->
-                  </div>
-                </div>
-              </div>
-              
-              <!-- <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      Hide this modal and show the first with the button below.
-                    </div>
-                    <div class="modal-footer">
-                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
                     </div>
                   </div>
                 </div>
               </div> -->
+
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content" style="border-radius: 0px;">
+                    <div class="modal-body">
+                      <div>
+                        <img src="./assets/images/latest.png" width="100%">
+                        <div id="section1" class="hidden modal-photo-title px-4 text-white md:absolute md:bottom-6 md:mb-5 md:leading-10 pointer-events-none">
+                          <div class="font-bold text-[1.9rem] 2xl:text-[4rem]">Alfa Romeo Stelvio</div>
+                          <div class="text-[1rem] font-semibold md:mx-[0.22rem] md:-mt-2 2xl:text-[2rem]"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
+                        </div>
+                        <div id="section2" class="hidden modal-photo-details p-4 w-[45rem] text-white md:absolute md:bottom-4">
+                          <div class="md:text-[1.5rem] md:leading-6">
+                            <p>The Alfa Romeo Stelvio (Type 949) is a car produced by the Italian manufacturer Alfa Romeo since 2016.[a] As a D-segment model it slots above the smaller Tonale model in the marque's SUV range.[6] A compact crossover SUV,[7][8] it was first revealed at the 2016 Los Angeles Auto Show, introduced by a 60" short film directed by Louis Sebastian Pane, and entered production at the Cassino Plant at the end of 2016.[9] In 2018 it was Alfa Romeo's best-selling model, with roughly 43,000 sold that year.</p>
+                          </div>
+                        </div>
+                        <div id="section3" class="hidden modal-photo-acomment px-4 text-white md:absolute md:bottom-6 md:leading-10 pointer-events-none">
+                          <div class="font-bold text-[1.9rem] 2xl:text-[4rem]">Alfa Romeo Stelvio</div>
+                          <div class="text-[1rem] font-semibold md:mx-[0.22rem] md:-mt-2 2xl:text-[2rem]"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
+                        </div>
+                      </div>
+                      <div class="modal-btn-group">
+                        <div class="mb-3">
+                          <button id="btn1" class="btn btn-primary active">Show 1</button>
+                        </div>
+                        <div class="mb-3">
+                          <button id="btn2" class="btn btn-primary">Show 2</button>
+                        </div>
+                        <div class="mb-3">
+                          <button id="btn3" class="btn btn-primary">Show 3</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
 
               <!-- modal section -->
             </div>
@@ -142,8 +165,8 @@
 
             <div class="carousel-item abt-page">
               <div class="flex flex-col md:flex-row h-100">
-                <div class="abt-img w-full md:w-1/2 md:p-4 d-none d-sm-block gallery animate__animated animate__fadeInDownBig animate__delay-1s"></div>
-                <div class="w-full h-100 -p-1 md:w-1/2 md:ml-4 md:p-4 animate__animated animate__fadeInUpBig animate__delay-1s">
+                <div class="abt-img w-full md:w-1/2 md:p-4 md:mt-2 d-none d-sm-block gallery animate__animated animate__fadeInDownBig animate__delay-0.8s"></div>
+                <div class="w-full h-100 -p-1 md:w-1/2 md:ml-4 md:p-4 animate__animated animate__fadeInUpBig animate__delay-0.8s">
                   <div class="abt-title md:mt-20 font-bold">About</div>
                   <p class="text-start font-thin abt-p">This website is not just a project to be included in my portfolio, this website will also showcase my photography collection that I have taken in the virtual world that I explored.</p>
                   <P class="text-start font-thin abt-p">Photography can be anything we just need to look at it properly. The subject does not matter everything can be a subject in photography. that's why I created this website to show the world that no matter how bad or how good the graphics are, all we need is just the right angle and creativity to produce great photography.</P>
@@ -163,6 +186,74 @@
       </div>
     </section>
    
-  </body>                           
+  </body>                    
+  
+  <!-- <script>
+    const sections = {
+      btn1: document.getElementById('section1'),
+      btn2: document.getElementById('section2'),
+      btn3: document.getElementById('section3'),
+    };
+  
+    Object.keys(sections).forEach(buttonId => {
+      const button = document.getElementById(buttonId);
+      button.addEventListener('click', () => {
+        const section = sections[buttonId];
+  
+        // If section is already visible, hide it
+        if (!section.classList.contains('hidden')) {
+          section.classList.add('hidden');
+        } else {
+          // Hide all others first
+          Object.values(sections).forEach(sec => sec.classList.add('hidden'));
+          // Then show this one
+          section.classList.remove('hidden');
+        }
+      });
+    });
+  </script> -->
+
+  <script>
+    const sections = {
+      btn1: document.getElementById('section1'),
+      btn2: document.getElementById('section2'),
+      btn3: document.getElementById('section3'),
+    };
+  
+    const buttons = {
+      btn1: document.getElementById('btn1'),
+      btn2: document.getElementById('btn2'),
+      btn3: document.getElementById('btn3'),
+    };
+  
+    Object.keys(buttons).forEach(buttonId => {
+      const button = buttons[buttonId];
+      button.addEventListener('click', () => {
+        const section = sections[buttonId];
+  
+        const isAlreadyVisible = !section.classList.contains('hidden');
+  
+        // Clear all first
+        Object.values(sections).forEach(sec => sec.classList.add('hidden'));
+        Object.values(buttons).forEach(btn => btn.classList.remove('active'));
+  
+        if (!isAlreadyVisible) {
+          section.classList.remove('hidden');
+          button.classList.add('active');
+        }
+      });
+    });
+  
+    // Set default when modal opens
+    const modal = document.getElementById('exampleModalToggle');
+    modal.addEventListener('shown.bs.modal', () => {
+      // Show section1 and activate btn1
+      Object.values(sections).forEach(sec => sec.classList.add('hidden'));
+      Object.values(buttons).forEach(btn => btn.classList.remove('active'));
+  
+      sections['btn1'].classList.remove('hidden');
+      buttons['btn1'].classList.add('active');
+    });
+  </script>
 
 </html>
