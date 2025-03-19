@@ -85,13 +85,26 @@
     right: 1rem;
     transform: translate(-50% , -50%);
  }
+ .modal-btn-title,
+ .modal-btn-details,
+ .modal-btn-acomment{
+    color: white !important;
+ }
+ .modal-btn-title:hover,
+ .modal-btn-details:hover,
+ .modal-btn-acomment:hover{
+    color: black !important;
+ }
+ .btn.active i {
+    color: red;
+  }
  .modal-photo-title{
     animation: fadeInRight !important;
     animation-duration: 1s !important;
     animation-timing-function: ease-in-out !important;
  }
  .modal-photo-details{
-    background: rgba(51, 170, 51, .7);  
+    background: rgba(0, 0, 0, 0.6);  
     animation: fadeInDown !important;
     animation-duration: 1s !important;
     animation-timing-function: ease-in-out !important;
@@ -138,6 +151,19 @@
     }
     .about-box{
         margin-top: 1rem;
+   }
+   .abt-page{
+    padding: 0%;
+   }
+   .abt-msg{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 5rem;
+    color: white;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/abt-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
    }
    .abt-p{
         font-size: 1rem;
