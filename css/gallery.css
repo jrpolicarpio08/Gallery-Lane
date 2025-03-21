@@ -73,42 +73,36 @@
     opacity: 0.5;
     transition: 0.3s;
  }
- .latest-photo-details{
+ .latest-photo-title{
     animation: fadeInRight !important;
     animation-duration: 2s !important;
     animation-timing-function: ease-in-out !important;
  }
  .modal-btn-group{
     position: absolute;
-    top:  50%;
+    top:  13%;
     left: inherit;
-    right: 1rem;
+    right: 0%;
     transform: translate(-50% , -50%);
  }
- .modal-btn-title,
- .modal-btn-details,
- .modal-btn-acomment{
+ .modal-btn-title{
     color: white !important;
  }
- .modal-btn-title:hover,
- .modal-btn-details:hover,
- .modal-btn-acomment:hover{
+ .modal-btn-title:hover{
     color: black !important;
  }
  .btn.active i {
     color: red;
   }
- .modal-photo-title{
-    animation: fadeInRight !important;
-    animation-duration: 1s !important;
-    animation-timing-function: ease-in-out !important;
- }
+ /* .modal-photo-title{
+
+ } */
  .modal-photo-details{
     background: rgba(0, 0, 0, 0.6);  
-    animation: fadeInDown !important;
-    animation-duration: 1s !important;
-    animation-timing-function: ease-in-out !important;
  }
+ div.modal-photo-details-info p{
+    width: clamp(45ch, 100% , 75ch);
+}
 .abt-page{
     padding: 3rem;
 }
@@ -168,6 +162,47 @@
    .abt-p{
         font-size: 1rem;
         line-height: 1.5rem;
+    }
+    .latest-photo-title,
+    .modal-photo-title{
+        margin-bottom: 3rem;
+        font-size: 1rem !important;
+        color: black !important;
+    }
+    .modal-photo-details{
+        margin-top: 1rem;
+    }
+    .modal-photo-details-title{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        width: 12rem;
+        font-size: 1.3rem;     
+    }
+    .modal-photo-details-info{
+        height: 11rem;
+        width: 12rem;
+        font-size: 0.5rem;
+        width: clamp(45ch, 128% , 75ch);
+        margin-bottom: 2.5rem;
+    }
+    .modal-photo-details-ainfo{
+        padding-top: 0.2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        width: 12.8rem;
+        height: 2.5rem;
+        bottom: 8.5%;
+        font-size: 0.5rem;
+    }
+    .modal-photo-credits{
+        padding: 0.5rem;
+        height: 10rem;
+        margin-left: 20px;
+    }
+    .modal-photo-credits-author,
+    .modal-photo-credits-date,
+    .modal-photo-credits-mods{
+        font-size: 0.7rem;
     }
   } 
   
