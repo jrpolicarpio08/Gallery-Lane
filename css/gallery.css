@@ -193,6 +193,7 @@
         height: 2.5rem;
         bottom: 8.5%;
         font-size: 0.5rem;
+        line-height: 0.6rem;
     }
     .modal-photo-credits{
         padding: 0.7rem;
@@ -206,7 +207,7 @@
     }
     .modal-btn-group{
         position: absolute;
-        top:  16%;
+        top: 16%;
         left: inherit;
         right: -4.5%;
         transform: translate(-50% , -50%);
