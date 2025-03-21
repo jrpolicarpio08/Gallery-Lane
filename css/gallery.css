@@ -180,10 +180,10 @@
     }
     .modal-photo-details-info{
         height: 11rem;
-        width: 12rem;
         font-size: 0.5rem;
         width: clamp(45ch, 128% , 75ch);
         margin-bottom: 2.5rem;
+        padding-right: 0.4rem;
     }
     .modal-photo-details-ainfo{
         padding-top: 0.2rem;
