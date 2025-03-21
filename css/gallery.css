@@ -195,7 +195,7 @@
         font-size: 0.5rem;
     }
     .modal-photo-credits{
-        padding: 0.5rem;
+        padding: 0.7rem;
         height: 10rem;
         margin-left: 20px;
     }
@@ -204,5 +204,15 @@
     .modal-photo-credits-mods{
         font-size: 0.7rem;
     }
+    .modal-btn-group{
+        position: absolute;
+        top:  16%;
+        left: inherit;
+        right: -4.5%;
+        transform: translate(-50% , -50%);
+     }
+     .modal-btn-title{
+        font-size: 2rem;
+     }
   } 
   
