@@ -103,6 +103,9 @@
  .modal-photo-details-info{
     width: clamp(45ch, 100% , 75ch);
 }
+.modal-photo-details-info-p2{
+    margin-bottom: -100px;
+}
 .abt-page{
     padding: 3rem;
 }
@@ -181,6 +184,9 @@
     .modal-photo-details-info{
         height: 10rem;
         font-size: 0.5rem;
+    }
+    .modal-photo-details-info-p2{
+        margin-bottom: 1rem;
     }
     .modal-photo-details-ainfo{
         width: 26vh;
