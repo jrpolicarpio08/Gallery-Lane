@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gallery Lane</title>
+    <title>|&nbsp;&nbsp;Gallery Lane</title>
+    <link rel="icon" href="./assets/icons/gallery-lane-icon.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
@@ -16,6 +17,7 @@
 
     <section>
       <div>
+        <!-- nav bar -->
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="logo d-none d-lg-block">
             <img class="" src="./assets/icons/gallery-lane-icon.svg" width="60" height="60">
@@ -59,9 +61,12 @@
               </span>
             </button>
           </div>
+           <!-- nav bar -->
 
+          <!-- body -->
           <div class="carousel-inner">
 
+            <!-- home screen -->
             <div class="carousel-item p-5">
               <div class="text-white pl-5 mt-2 md:pl-10 h-50 main-box animate__animated animate__fadeInDownBig animate__delay-0.5s">
                 <div class="font-semibold text-[2.5rem] md:text-[5rem]">Gallery Lane</div>
@@ -85,12 +90,19 @@
                 </div>
               </div>
             </div>
+            <!-- home screen -->
 
+            <!-- latest screen -->
             <div class="carousel-item active">
               <div class="flex justify-center items-center latest-page p-3">
                 <div class="photo-bg flex justify-start items-end md:w-[50rem] 2xl:w-[100rem] xxl: bg-white shadow-2xl shadow-gray-950 p-3">
                   <div class="spotlight-container absolute inset-0 m-auto z-10 pointer-events-none md:w-[30rem] 2xl:w-[60rem] animate__animated animate__fadeInDown animate__delay-0.5s">
-                    <img src="./assets/images/sl.png">
+                    <div class="d-none d-lg-block">
+                      <img src="./assets/images/sl.png">
+                    </div>
+                    <div class="d-sm-block d-md-none d-lg-none h-[100rem]">
+                      <img src="./assets/images/slmobile.png">
+                    </div>
                   </div>
                   <div class="latest-photo-container relative items-center">
                     <input data-bs-toggle="modal" data-bs-target="#exampleModalToggle" class="latest-img" width="100%" type="image" src="./assets/images/latest.png">
@@ -101,8 +113,8 @@
                   </div>
                 </div>
               </div>
-              <!-- modal section -->
 
+              <!-- modal photo latest section -->
               <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
                   <div class="modal-content" style="border-radius: 0px;">
@@ -110,17 +122,116 @@
                       <div>
                         <img src="./assets/images/latest.png" width="100%">   
 
-                        <div  id="section1" class="modal-photo-title animate__animated animate__fadeInRight md:px-4 text-white md:absolute md:bottom-6 md:leading-10 pointer-events-none">
-                          <div class="font-bold md:text-[1.9rem]">Alfa Romeo Stelvio</div>
-                          <div class="md:text-[1rem] font-semibold md:mx-[0.22rem] md:-mt-2"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
+                        <div class="d-none d-sm-block">
+                          <div  id="section1" class="modal-photo-title animate__animated animate__fadeInRight md:px-4 text-white md:absolute md:bottom-6 md:leading-10 pointer-events-none">
+                            <div class="font-bold md:text-[1.9rem]">Alfa Romeo Stelvio</div>
+                            <div class="md:text-[1rem] font-semibold md:mx-[0.22rem] md:-mt-2"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
+                          </div>
                         </div>
 
-                        <div id="section2" class="modal-photo-details hidden animate__animated duration-300 md:w-[69.1rem] md:h-[29rem] md:px-[1rem] md:pt-[1rem] text-white md:absolute top-4 overflow-x-hidden">
-                          <div class="relative flex justify-center text-center">
-                            <div class="w-2/3 px-[1.5rem]">
+                        <div class="d-none d-sm-block">
+                          <div id="section2" class="modal-photo-details hidden animate__animated duration-300 md:w-[69.1rem] md:h-[29rem] md:px-[1rem] md:pt-[1rem] text-white md:absolute top-4 overflow-x-hidden">
+                            <div class="relative flex justify-center text-center">
+                              
+                              <div class="w-2/3">
+                                <div class="px-[1.5rem] ">
+                                  <div class="modal-photo-details-title md:text-[3.5rem] border-b-[0.2rem] md:w-[35rem] font-semibold md:mb-[1.8rem]">Alfa Romeo Stelvio</div>
+                                  <div class="modal-photo-details-info md:leading-8 md:pl-[1rem] md:mb-[2rem] text-start">
+                                    <div class="md:text-[1rem] md:leading-[1rem] h-[10rem] pr-[0.2rem] md:w-[41.5rem] md: overflow-y-scroll overflow-x-hidden">
+                                      <div>
+                                        <p class="modal-photo-details-info-p">The Alfa Romeo Stelvio (Type 949) is a car produced by the Italian manufacturer Alfa Romeo since 2016. As a D-segment model it slots above the smaller Tonale model in the marque's SUV range. A compact crossover SUV, it was first revealed at the 2016 Los Angeles Auto Show, introduced by a 60" short film directed by Louis Sebastian Pane, and entered production at the Cassino Plant at the end of 2016. In 2018 it was Alfa Romeo's best-selling model, with roughly 43,000 sold that year.</p>
+                                      </div>
+                                      <div>
+                                        <p class="modal-photo-details-info-p2">The Stelvio uses the same Giorgio platform already used by the Giulia,but slightly modified and raised by 22 cm (8.7 in).The Stelvio also shares the same engines and most of the mechanics, including a carbon-fibre driveshaft. In addition, its track width has increased by 2.9 cm (1.1 in) in the rear and 5.4 cm (2.1 in) in the front. It has a boot capacity of 525 L (18.5 cu ft).The boot sill is aligned with the rear bumper and cargo does not need to be lifted over a lip when being removed. There are large vehicle blind spots behind the car's pillars.It has a 50/50 weight distribution and a drag coefficient of 0.32 (Cd).Euro NCAP classify it as a large off-road car.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="pl-[1.5rem]">
+                                  <div class="modal-photo-details-ainfo bg-[#ffff] w-[100%] md:h-[5rem] md:px-[1.7rem] md:pt-[0.5rem] text-dark text-start md:leading-6">
+                                    <div class="md:text-[1.5rem] font-bold  uppercase">Additional Information</div>
+                                    <div class="flex">
+                                      <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                                        <span class="d-none d-lg-block">Resolution : 3440 X 1440</span> 
+                                        <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-desktop"></i> : 3440 X 1440</span>
+                                      </div>
+                                      <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                                        <span class="d-none d-lg-block">Settings : ULTRA</span> 
+                                        <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-sliders"></i> : ULTRA</span>
+                                      </div>
+                                      <div class="md:text-[1rem] font-semibold">
+                                        <span class="d-none d-lg-block">Settings : 5K</span> 
+                                        <span class="d-sm-block d-md-none d-lg-none"><i class="fa-regular fa-image"></i> : 5K</span>
+                                      </div>
+                                    </div>
+                                    <div class="flex md:-mt-[0.4rem]">
+                                      <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                                        <span class="d-none d-lg-block">Game : GTA 5 FIVEM</span>
+                                        <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-gamepad"></i> : GTA 5 FIVEM</span>
+                                      </div>
+                                      <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                                        <span class="d-none d-lg-block">Server : FiveM SpeedLab WL</span>
+                                        <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-server"></i> : FiveM SpeedLab WL</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="w-1/3">
+                                <div class="absolute">
+                                  <div class="modal-photo-credits-border relative border-l-[0.3rem] top-[1rem] h-[13rem] md:left-[-0.24rem]"></div>
+                                </div>
+                                <div class="modal-photo-credits mt-[1rem]">
+                                  <div class="text-start md:pl-[2rem] md:pt-[2.3rem] md:leading-7">
+                                    <div class="modal-photo-credits-author text-[1.3rem] mb-[1rem]">
+                                      <div class="uppercase font-bold">Author</div>
+                                      <div class="font-semibold">JRVP08</div>
+                                    </div>
+                                    <div class="modal-photo-credits-date text-[1.3rem] mb-[1rem]">
+                                      <div class="uppercase font-bold">Date</div>
+                                      <div class="font-semibold">03/11/2025</div>
+                                    </div>
+                                    <div class="modal-photo-credits-mods text-[1.3rem]">
+                                      <div class="uppercase font-bold">Mods</div>
+                                      <div class="font-semibold">
+                                        <div>QUANT V</div>
+                                        <div>SG PROJECT</div>
+                                        <div>LA REVO</div>
+                                        <div>5Real</div>
+                                        <div>ENB</div>
+                                        <div>RESHADE</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        
+                      </div>
+
+                      <div class="modal-btn-group d-none d-sm-block">
+                        <div class="relative">
+                          <button id="toggleBtn" class="btn modal-btn-title border-0">
+                            <span class="md:text-[3rem] text-center">
+                              <i class="fa-solid fa-circle-info"></i>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+
+                      <!-- mobile photo details -->
+                      <div class="d-sm-block d-md-none d-lg-none modal-photo-details md:w-[69.1rem] md:h-[29rem] md:px-[1rem] md:pt-[1rem] text-white md:absolute top-4 overflow-x-hidden">
+                        <div class="relative flex justify-center text-center">
+                          <div class="w-2/3">
+                            <div class="px-[1.5rem] ">
                               <div class="modal-photo-details-title md:text-[3.5rem] border-b-[0.2rem] md:w-[35rem] font-semibold md:mb-[1.8rem]">Alfa Romeo Stelvio</div>
-                              <div class="modal-photo-details-info md:leading-8 md:pl-[1rem] mb-[2rem] text-start">
-                                <div class="md:text-[1rem] md:leading-[1rem] h-[10rem] overflow-y-scroll overflow-x-hidden">
+                              <div class="modal-photo-details-info md:leading-8 md:pl-[1rem] md:mb-[2rem] text-start">
+                                <div class="md:text-[1rem] md:leading-[1rem] h-[10rem] pr-[0.2rem] md:w-[41.5rem] md: overflow-y-scroll overflow-x-hidden">
                                   <div>
                                     <p class="modal-photo-details-info-p">The Alfa Romeo Stelvio (Type 949) is a car produced by the Italian manufacturer Alfa Romeo since 2016. As a D-segment model it slots above the smaller Tonale model in the marque's SUV range. A compact crossover SUV, it was first revealed at the 2016 Los Angeles Auto Show, introduced by a 60" short film directed by Louis Sebastian Pane, and entered production at the Cassino Plant at the end of 2016. In 2018 it was Alfa Romeo's best-selling model, with roughly 43,000 sold that year.</p>
                                   </div>
@@ -129,70 +240,83 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="abosolute">
-                                <div class="modal-photo-details-ainfo bg-[#ffff] md:h-[5rem] md:w-[43.5rem] md:px-[1.7rem] md:pt-[0.5rem] relative text-dark text-start md:leading-6">
-                                  <div class="md:text-[1.5rem] font-bold  uppercase">Additional Information</div>
-                                  <div class="flex">
-                                    <div class="mr-[0.2rem] md:mr-[0.4rem] md:text-[1rem] font-semibold">Resolution: 3440 X 1440</div>
-                                    <div class="mr-[0.2rem] md:mr-[0.4rem] md:text-[1rem] font-semibold">Settings: ULTRA</div>
-                                    <div class="md:text-[1rem] md:font-semibold">Render: 5K</div>
+                            </div>
+                            <div class="pl-[1.5rem]">
+                              <div class="modal-photo-details-ainfo bg-[#ffff] w-[100%] md:h-[5rem] md:px-[1.7rem] md:pt-[0.5rem] text-dark text-start md:leading-6">
+                                <div class="md:text-[1.5rem] font-bold  uppercase">Additional Information</div>
+                                <div class="flex">
+                                  <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                                    <span class="d-none d-lg-block">Resolution : 3440 X 1440</span> 
+                                    <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-desktop"></i> : 3440 X 1440</span>
                                   </div>
-                                  <div class="flex md:-mt-[0.4rem]">
-                                    <div class="mr-[0.2rem] md:mr-[0.4rem] md:text-[1rem] font-semibold">Game: GTA 5 FIVEM</div>
-                                    <div class="mr-[0.2rem] md:mr-[0.4rem] md:text-[1rem] font-semibold">Server: FiveM SpeedLab WL</div>
+                                  <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                                    <span class="d-none d-lg-block">Settings : ULTRA</span> 
+                                    <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-sliders"></i> : ULTRA</span>
+                                  </div>
+                                  <div class="md:text-[1rem] font-semibold">
+                                    <span class="d-none d-lg-block">Settings : 5K</span> 
+                                    <span class="d-sm-block d-md-none d-lg-none"><i class="fa-regular fa-image"></i> : 5K</span>
+                                  </div>
+                                </div>
+                                <div class="flex md:-mt-[0.4rem]">
+                                  <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                                    <span class="d-none d-lg-block">Game : GTA 5 FIVEM</span>
+                                    <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-gamepad"></i> : GTA 5 FIVEM</span>
+                                  </div>
+                                  <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                                    <span class="d-none d-lg-block">Server : FiveM SpeedLab WL</span>
+                                    <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-server"></i> : FiveM SpeedLab WL</span>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="w-1/3">
-                              <div class="modal-photo-credits border-l-[0.3rem] mt-[1rem] h-[16rem] w-[20rem]">
-                                <div class="text-start md:p-8 md:leading-7">
-                                  <div class="modal-photo-credits-author text-[1.3rem] mb-[1rem]">
-                                    <div class="uppercase font-bold">Author</div>
-                                    <div class="font-semibold">JRVP08</div>
-                                  </div>
-                                  <div class="modal-photo-credits-date text-[1.3rem] mb-[1rem]">
-                                    <div class="uppercase font-bold">Date</div>
-                                    <div class="font-semibold">03/11/2025</div>
-                                  </div>
-                                  <div class="modal-photo-credits-mods text-[1.3rem]">
-                                    <div class="uppercase font-bold">Mods</div>
-                                    <div class="font-semibold">
-                                      <div>QUANT V</div>
-                                      <div>SG PROJECT</div>
-                                      <div>LA REVO</div>
-                                      <div>5Real</div>
-                                      <div>ENB</div>
-                                      <div>RESHADE</div>
-                                    </div>
+                          </div>
+                          <div class="w-1/3">
+                            <div class="absolute">
+                              <div class="modal-photo-credits-border relative border-l-[0.3rem] top-[1rem] h-[13rem] md:left-[-0.24rem]"></div>
+                            </div>
+                            <div class="modal-photo-credits mt-[1rem]">
+                              <div class="text-start md:pl-[2rem] md:pt-[2.3rem] md:leading-7">
+                                <div class="modal-photo-credits-author text-[1.3rem] mb-[1rem]">
+                                  <div class="uppercase font-bold">Author</div>
+                                  <div class="font-semibold">JRVP08</div>
+                                </div>
+                                <div class="modal-photo-credits-date text-[1.3rem] mb-[1rem]">
+                                  <div class="uppercase font-bold">Date</div>
+                                  <div class="font-semibold">03/11/2025</div>
+                                </div>
+                                <div class="modal-photo-credits-mods text-[1.3rem]">
+                                  <div class="uppercase font-bold">Mods</div>
+                                  <div class="font-semibold">
+                                    <div>QUANT V</div>
+                                    <div>SG PROJECT</div>
+                                    <div>LA REVO</div>
+                                    <div>5Real</div>
+                                    <div>ENB</div>
+                                    <div>RESHADE</div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        
                       </div>
-                      <div class="modal-btn-group">
-                        <div class="mb-1">
-                          <button id="toggleBtn" class="btn modal-btn-title border-0">
-                            <span class="md:text-[3rem] text-center">
-                              <i class="fa-solid fa-circle-info"></i>
-                            </span>
-                          </button>
-                        </div>
-                      </div>
+                      <!-- mobile photo details -->
+
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- modal section -->
+              <!-- modal photo latest section -->
+
             </div>
+            <!-- latest screen -->
 
             <div class="carousel-item">
               test3
             </div>
 
+            <!-- about screen -->
             <div class="carousel-item abt-page">
               <div class="flex flex-col md:flex-row h-100">
                 <div class="abt-img w-full md:w-1/2 md:p-4 md:mt-2 d-none d-sm-block gallery animate__animated animate__fadeInDownBig animate__delay-0.8s"></div>
@@ -205,12 +329,14 @@
                 </div>
               </div>
             </div>
+            <!-- about screen -->
 
             <div class="carousel-item">
               test3
             </div>
 
           </div>
+          <!-- body -->
         </div>
 
       </div>
