@@ -1,6 +1,9 @@
-body{
-    scroll-behavior: smooth;
-}
+body{ scroll-behavior: smooth;}
+
+.modal { background: rgba(0, 0, 0, 0.5);}
+
+.modal-backdrop { display: none;}
+
 .logo{
     z-index: 100 !important;
     position: absolute;
@@ -27,7 +30,6 @@ body{
 }
 .carousel-nav{
     height: 1.6rem;
-    z-index: 100 !important;
     position: absolute;
     top:  0;
     left: inherit;
@@ -39,9 +41,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.main-box-btn{
-    border: solid white;
-}
+.latest-box-btn,
+.main-box-btn{ border: solid white; } 
+
+.latest-box-btn:hover,
 .main-box-btn:hover{
     border: solid white !important;
     background-color: white !important;
@@ -58,9 +61,8 @@ body{
     color: white;
     font-size: 2rem;
 }
-.about-box-btn:hover{
-    color: rgba(255, 255, 255, 0.735);
-}
+.about-box-btn:hover{ color: rgba(255, 255, 255, 0.735); }
+
 .latest-page{
     height: 100%;
     background-image: radial-gradient(circle, #ffffff, #e9e9e9, #d3d3d3, #bdbdbd, #a8a8a8);
@@ -83,14 +85,12 @@ body{
  }
  .modal-btn-group{
     position: absolute;
-    top:  13%;
+    top:  15%;
     left: inherit;
-    right: 0%;
+    right: -0.5%;
     transform: translate(-50% , -50%);
  }
- .modal-btn-title{
-    color: white !important;
- }
+ .modal-btn-title{ color: white !important; }
  .modal-btn-title:hover{
     color: black !important;
  }
@@ -109,9 +109,15 @@ body{
 .modal-photo-details-info-p2{
     margin-bottom: -100px;
 }
-.abt-page{
-    padding: 3rem;
-}
+.game-item:hover button{
+    opacity: 0.5;
+    transition: 0.3s;
+ }
+ .game-section{
+    width: 100%;
+    object-fit: scale-down;
+ }
+.abt-page{ padding: 3rem; }
 .abt-img{
     height: 100%;
     object-fit: cover;
@@ -120,16 +126,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.abt-title{
-    font-size: 5rem;
-}
+.abt-title{ font-size: 5rem; }
 .abt-p{
     font-size: 1.3rem;
     line-height: 1.5rem;
-}
-.home-abt-btn-container{ 
-   position: relative;
-   z-index: 10;
 }
 @media screen and (min-width: 360px) and (max-width: 1279px) { 
     .carousel-indicators [data-bs-target] {
@@ -151,21 +151,21 @@ body{
     }
     .about-box{
         margin-top: 1rem;
-   }
-   .abt-page{
-    padding: 0%;
-   }
-   .abt-msg{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 5rem;
-    color: white;
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/abt-img.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   }
-   .abt-p{
+    }
+    .abt-page{
+        padding: 0%;
+    }
+    .abt-msg{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 5rem;
+        color: white;
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/abt-img.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .abt-p{
         font-size: 1rem;
         line-height: 1.5rem;
     }

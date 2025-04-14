@@ -352,77 +352,159 @@
 // });
 // v4
 
+// v5
+// document.addEventListener("DOMContentLoaded", function () {
+//   const sections = {};
+//   const buttons = {};
+//   const animations = {};
+//   const animationDuration = 500;
+//   let activeSection = null;
+//   let activeButton = null;
+
+//   // 🔥 Automatically detect buttons and sections
+//   document.querySelectorAll("[id^='gamebtn']").forEach((btn) => {
+//       const btnId = btn.id;
+//       const sectionId = btnId.replace("gamebtn", "game"); // Example: gamebtn1 -> game1
+
+//       sections[btnId] = document.getElementById(sectionId);
+//       buttons[btnId] = btn;
+
+//       animations[btnId] = {
+//           show: "animate__fadeIn",
+//           hide: "animate__fadeOut"
+//       };
+//   });
+
+//   function toggleSection(targetId) {
+//       const targetSection = sections[targetId];
+//       const targetButton = buttons[targetId];
+
+//       if (activeSection === targetSection) return;
+
+//       if (activeSection) {
+//           const { hide } = animations[activeButton.id];
+
+//           activeSection.classList.remove("animate__fadeIn");
+//           activeSection.classList.add(hide);
+
+//           setTimeout(() => {
+//               activeSection.classList.add("hidden", "opacity-0");
+//               activeSection.classList.remove(hide);
+//               showNewSection(targetId);
+//           }, animationDuration);
+//       } else {
+//           showNewSection(targetId);
+//       }
+
+//       // 🔥 Update active button styling
+//       if (activeButton) {
+//           activeButton.classList.remove("active");
+//       }
+//       targetButton.classList.add("active");
+//       activeButton = targetButton;
+//   }
+
+//   function showNewSection(targetId) {
+//       const targetSection = sections[targetId];
+//       const { show } = animations[targetId];
+
+//       targetSection.classList.remove("hidden", "opacity-0");
+//       targetSection.classList.add(show);
+
+//       activeSection = targetSection;
+//   }
+
+//   // 🔥 Auto-show the section with "active" button on page load
+//   const defaultButton = Object.values(buttons).find((btn) => btn.classList.contains("active"));
+
+//   if (defaultButton) {
+//       showNewSection(defaultButton.id);
+//       activeButton = defaultButton;
+//   }
+
+//   // 🔥 Attach event listeners to all buttons
+//   Object.keys(buttons).forEach((key) => {
+//       buttons[key].addEventListener("click", () => toggleSection(key));
+//   });
+// });
+// v5
+
 document.addEventListener("DOMContentLoaded", function () {
-  const sections = {};
-  const buttons = {};
-  const animations = {};
-  const animationDuration = 500;
-  let activeSection = null;
-  let activeButton = null;
+    const sections = {};
+    const buttons = {};
+    const animations = {};
+    const animationDuration = 500;
+    let activeSection = null;
+    let activeButton = null;
 
-  // 🔥 Automatically detect buttons and sections
-  document.querySelectorAll("[id^='gamebtn']").forEach((btn) => {
-      const btnId = btn.id;
-      const sectionId = btnId.replace("gamebtn", "game"); // Example: gamebtn1 -> game1
+    // 🔥 Automatically detect buttons and sections
+    document.querySelectorAll("[id^='gamebtn']").forEach((btn) => {
+        const btnId = btn.id;
+        const sectionId = btnId.replace("gamebtn", "game"); // Example: gamebtn1 -> game1
 
-      sections[btnId] = document.getElementById(sectionId);
-      buttons[btnId] = btn;
+        sections[btnId] = document.getElementById(sectionId);
+        buttons[btnId] = btn;
 
-      animations[btnId] = {
-          show: "animate__fadeIn",
-          hide: "animate__fadeOut"
-      };
-  });
+        animations[btnId] = {
+            show: "animate__fadeIn",
+            hide: "animate__fadeOut"
+        };
+    });
 
-  function toggleSection(targetId) {
-      const targetSection = sections[targetId];
-      const targetButton = buttons[targetId];
+    function toggleSection(targetId) {
+        const targetSection = sections[targetId];
+        const targetButton = buttons[targetId];
 
-      if (activeSection === targetSection) return;
+        if (activeSection === targetSection) return;
 
-      if (activeSection) {
-          const { hide } = animations[activeButton.id];
+        if (activeSection) {
+            const { hide } = animations[activeButton.id];
 
-          activeSection.classList.remove("animate__fadeIn");
-          activeSection.classList.add(hide);
+            activeSection.classList.remove("animate__fadeIn");
+            activeSection.classList.add(hide);
 
-          setTimeout(() => {
-              activeSection.classList.add("hidden", "opacity-0");
-              activeSection.classList.remove(hide);
-              showNewSection(targetId);
-          }, animationDuration);
-      } else {
-          showNewSection(targetId);
-      }
+            setTimeout(() => {
+                activeSection.classList.add("hidden", "opacity-0");
+                activeSection.classList.remove(hide);
+                showNewSection(targetId);
+            }, animationDuration);
+        } else {
+            showNewSection(targetId);
+        }
 
-      // 🔥 Update active button styling
-      if (activeButton) {
-          activeButton.classList.remove("active");
-      }
-      targetButton.classList.add("active");
-      activeButton = targetButton;
-  }
+        // 🔥 Update active button styling
+        if (activeButton) {
+            activeButton.classList.remove("active");
+            activeButton.querySelector("img").style.opacity = "1"; // Reset previous button image opacity
+        }
 
-  function showNewSection(targetId) {
-      const targetSection = sections[targetId];
-      const { show } = animations[targetId];
+        targetButton.classList.add("active");
+        targetButton.querySelector("img").style.opacity = "0.5"; // Set opacity for active button
+        activeButton = targetButton;
+    }
 
-      targetSection.classList.remove("hidden", "opacity-0");
-      targetSection.classList.add(show);
+    function showNewSection(targetId) {
+        const targetSection = sections[targetId];
+        const { show } = animations[targetId];
 
-      activeSection = targetSection;
-  }
+        targetSection.classList.remove("hidden", "opacity-0");
+        targetSection.classList.add(show);
 
-  // 🔥 Auto-show the section with "active" button on page load
-  const defaultButton = Object.values(buttons).find((btn) => btn.classList.contains("active"));
+        activeSection = targetSection;
+    }
 
-  if (defaultButton) {
-      showNewSection(defaultButton.id);
-      activeButton = defaultButton;
-  }
+    // 🔥 Auto-show the section with "active" button on page load
+    const defaultButton = Object.values(buttons).find((btn) => btn.classList.contains("active"));
 
-  // 🔥 Attach event listeners to all buttons
-  Object.keys(buttons).forEach((key) => {
-      buttons[key].addEventListener("click", () => toggleSection(key));
-  });
+    if (defaultButton) {
+        showNewSection(defaultButton.id);
+        activeButton = defaultButton;
+        activeButton.querySelector("img").style.opacity = "0.5"; // Ensure the default button's image is faded
+    }
+
+    // 🔥 Attach event listeners to all buttons
+    Object.keys(buttons).forEach((key) => {
+        buttons[key].addEventListener("click", () => toggleSection(key));
+    });
 });
+
