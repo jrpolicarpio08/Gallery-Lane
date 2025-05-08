@@ -206,6 +206,163 @@
 //     updateVisibility(); // Ensure correct initial setup
 // });
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     function setupScroll(sectionId) {
+//         const section = document.getElementById(sectionId);
+//         if (!section) return;
+
+//         const gameItems = section.querySelectorAll(".game-item");
+//         const scrollUp = section.querySelector(".scrollUp");
+//         const scrollDown = section.querySelector(".scrollDown");
+
+//         let currentIndex = 0;
+//         const imagesPerSet = 5;
+//         const totalImages = gameItems.length;
+
+//         function updateVisibility(direction) {
+//             if (direction) {
+//                 let currentItems = Array.from(gameItems).slice(currentIndex, currentIndex + imagesPerSet);
+//                 let nextIndex = currentIndex + (direction === "down" ? imagesPerSet : -imagesPerSet);
+//                 let nextItems = Array.from(gameItems).slice(nextIndex, nextIndex + imagesPerSet);
+
+//                 // Step 1: Animate current items out
+//                 currentItems.forEach((item) => {
+//                     item.classList.add("animate__animated", direction === "down" ? "animate__fadeOutUp" : "animate__fadeOutDown");
+//                 });
+
+//                 setTimeout(() => {
+//                     // Step 2: Hide old items
+//                     currentItems.forEach((item) => item.classList.add("hidden"));
+
+//                     // Step 3: Show new items and animate them in
+//                     nextItems.forEach((item) => {
+//                         item.classList.remove("hidden", "animate__fadeOutUp", "animate__fadeOutDown");
+//                         item.classList.add("animate__animated", direction === "down" ? "animate__fadeInUp" : "animate__fadeInDown");
+//                     });
+
+//                     currentIndex = nextIndex;
+
+//                     // Disable buttons if at the start or end
+//                     scrollUp.disabled = currentIndex === 0;
+//                     scrollDown.disabled = currentIndex + imagesPerSet >= totalImages;
+
+//                 }, 500); // Adjust delay to match Animate.css animation duration
+//             } else {
+//                 // Initial setup: Show first set, hide the rest
+//                 gameItems.forEach((item, index) => {
+//                     if (index < imagesPerSet) {
+//                         item.classList.remove("hidden");
+//                     } else {
+//                         item.classList.add("hidden");
+//                     }
+//                 });
+
+//                 // Ensure correct button state
+//                 scrollUp.disabled = currentIndex === 0;
+//                 scrollDown.disabled = imagesPerSet >= totalImages;
+//             }
+//         }
+
+//         scrollUp.addEventListener("click", function () {
+//             if (currentIndex > 0) {
+//                 updateVisibility("up");
+//             }
+//         });
+
+//         scrollDown.addEventListener("click", function () {
+//             if (currentIndex + imagesPerSet < totalImages) {
+//                 updateVisibility("down");
+//             }
+//         });
+
+//         updateVisibility(); // Ensure correct initial setup
+//     }
+
+//     // Automatically setup scroll sections by detecting them dynamically
+//     document.querySelectorAll(".scroll-section").forEach((section) => {
+//         setupScroll(section.id);
+//     });
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     function setupScroll(sectionId) {
+//         const section = document.getElementById(sectionId);
+//         if (!section) return;
+
+//         const gameItems = section.querySelectorAll(".game-item");
+//         const scrollUp = section.querySelector(".scrollUp");
+//         const scrollDown = section.querySelector(".scrollDown");
+
+//         let currentIndex = 0;
+//         const totalImages = gameItems.length;
+
+//         // Get imagesPerSet from data attribute or fallback to 5
+//         const imagesPerSet = parseInt(section.dataset.imagesPerSet) || 5;
+
+//         function updateVisibility(direction) {
+//             if (direction) {
+//                 let currentItems = Array.from(gameItems).slice(currentIndex, currentIndex + imagesPerSet);
+//                 let nextIndex = currentIndex + (direction === "down" ? imagesPerSet : -imagesPerSet);
+//                 let nextItems = Array.from(gameItems).slice(nextIndex, nextIndex + imagesPerSet);
+
+//                 // Step 1: Animate current items out
+//                 currentItems.forEach((item) => {
+//                     item.classList.add("animate__animated", direction === "down" ? "animate__fadeOutUp" : "animate__fadeOutDown");
+//                 });
+
+//                 setTimeout(() => {
+//                     // Step 2: Hide old items
+//                     currentItems.forEach((item) => item.classList.add("hidden"));
+
+//                     // Step 3: Show new items and animate them in
+//                     nextItems.forEach((item) => {
+//                         item.classList.remove("hidden", "animate__fadeOutUp", "animate__fadeOutDown");
+//                         item.classList.add("animate__animated", direction === "down" ? "animate__fadeInUp" : "animate__fadeInDown");
+//                     });
+
+//                     currentIndex = nextIndex;
+
+//                     // Disable buttons if at the start or end
+//                     scrollUp.disabled = currentIndex === 0;
+//                     scrollDown.disabled = currentIndex + imagesPerSet >= totalImages;
+
+//                 }, 500); // Match Animate.css timing
+//             } else {
+//                 // Initial setup
+//                 gameItems.forEach((item, index) => {
+//                     if (index < imagesPerSet) {
+//                         item.classList.remove("hidden");
+//                     } else {
+//                         item.classList.add("hidden");
+//                     }
+//                 });
+
+//                 scrollUp.disabled = currentIndex === 0;
+//                 scrollDown.disabled = imagesPerSet >= totalImages;
+//             }
+//         }
+
+//         scrollUp.addEventListener("click", function () {
+//             if (currentIndex > 0) {
+//                 updateVisibility("up");
+//             }
+//         });
+
+//         scrollDown.addEventListener("click", function () {
+//             if (currentIndex + imagesPerSet < totalImages) {
+//                 updateVisibility("down");
+//             }
+//         });
+
+//         updateVisibility(); // Initial render
+//     }
+
+//     // Auto-setup all scroll sections
+//     document.querySelectorAll(".scroll-section").forEach((section) => {
+//         setupScroll(section.id);
+//     });
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
     function setupScroll(sectionId) {
         const section = document.getElementById(sectionId);
@@ -216,39 +373,54 @@ document.addEventListener("DOMContentLoaded", function () {
         const scrollDown = section.querySelector(".scrollDown");
 
         let currentIndex = 0;
-        const imagesPerSet = 5;
         const totalImages = gameItems.length;
+        const imagesPerSet = parseInt(section.dataset.imagesPerSet) || 5;
+        const animationType = section.dataset.animationType || "vertical";
+
+        function getAnimations(direction) {
+            if (animationType === "horizontal") {
+                return direction === "down"
+                    ? ["animate__fadeOutLeft", "animate__fadeInRight"]
+                    : ["animate__fadeOutRight", "animate__fadeInLeft"];
+            } else {
+                return direction === "down"
+                    ? ["animate__fadeOutUp", "animate__fadeInUp"]
+                    : ["animate__fadeOutDown", "animate__fadeInDown"];
+            }
+        }
 
         function updateVisibility(direction) {
             if (direction) {
-                let currentItems = Array.from(gameItems).slice(currentIndex, currentIndex + imagesPerSet);
-                let nextIndex = currentIndex + (direction === "down" ? imagesPerSet : -imagesPerSet);
-                let nextItems = Array.from(gameItems).slice(nextIndex, nextIndex + imagesPerSet);
+                const currentItems = Array.from(gameItems).slice(currentIndex, currentIndex + imagesPerSet);
+                const nextIndex = currentIndex + (direction === "down" ? imagesPerSet : -imagesPerSet);
+                const nextItems = Array.from(gameItems).slice(nextIndex, nextIndex + imagesPerSet);
 
-                // Step 1: Animate current items out
+                const [outClass, inClass] = getAnimations(direction);
+
                 currentItems.forEach((item) => {
-                    item.classList.add("animate__animated", direction === "down" ? "animate__fadeOutUp" : "animate__fadeOutDown");
+                    item.classList.remove("animate__fadeInUp", "animate__fadeInDown", "animate__fadeOutUp", "animate__fadeOutDown", "animate__fadeInLeft", "animate__fadeOutLeft", "animate__fadeInRight", "animate__fadeOutRight");
+                    item.classList.add("animate__animated", outClass);
                 });
 
                 setTimeout(() => {
-                    // Step 2: Hide old items
-                    currentItems.forEach((item) => item.classList.add("hidden"));
+                    currentItems.forEach((item) => {
+                        item.classList.add("hidden");
+                        item.classList.remove(outClass, "animate__animated");
+                    });
 
-                    // Step 3: Show new items and animate them in
                     nextItems.forEach((item) => {
-                        item.classList.remove("hidden", "animate__fadeOutUp", "animate__fadeOutDown");
-                        item.classList.add("animate__animated", direction === "down" ? "animate__fadeInUp" : "animate__fadeInDown");
+                        item.classList.remove("hidden");
+                        item.classList.remove("animate__fadeInUp", "animate__fadeInDown", "animate__fadeInLeft", "animate__fadeInRight");
+                        item.classList.add("animate__animated", inClass);
                     });
 
                     currentIndex = nextIndex;
 
-                    // Disable buttons if at the start or end
                     scrollUp.disabled = currentIndex === 0;
                     scrollDown.disabled = currentIndex + imagesPerSet >= totalImages;
 
-                }, 500); // Adjust delay to match Animate.css animation duration
+                }, 500);
             } else {
-                // Initial setup: Show first set, hide the rest
                 gameItems.forEach((item, index) => {
                     if (index < imagesPerSet) {
                         item.classList.remove("hidden");
@@ -257,28 +429,22 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 });
 
-                // Ensure correct button state
                 scrollUp.disabled = currentIndex === 0;
                 scrollDown.disabled = imagesPerSet >= totalImages;
             }
         }
 
         scrollUp.addEventListener("click", function () {
-            if (currentIndex > 0) {
-                updateVisibility("up");
-            }
+            if (currentIndex > 0) updateVisibility("up");
         });
 
         scrollDown.addEventListener("click", function () {
-            if (currentIndex + imagesPerSet < totalImages) {
-                updateVisibility("down");
-            }
+            if (currentIndex + imagesPerSet < totalImages) updateVisibility("down");
         });
 
-        updateVisibility(); // Ensure correct initial setup
+        updateVisibility(); // Initial render
     }
 
-    // Automatically setup scroll sections by detecting them dynamically
     document.querySelectorAll(".scroll-section").forEach((section) => {
         setupScroll(section.id);
     });

@@ -1,13 +1,12 @@
 const sections = {
   btn1: document.getElementById('game1section1'),
   btn2: document.getElementById('game1section2'),
-//   btn3: document.getElementById('game1section3'),
+
 };
 
 const buttons = {
   btn1: document.getElementById('game1btn1'),
   btn2: document.getElementById('game1btn2'),
-//   btn3: document.getElementById(''),
 };
 
 Object.keys(buttons).forEach(buttonId => {

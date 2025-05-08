@@ -1,164 +1,237 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gallery Lane</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <script> tailwind.config = { prefix: "tw-", corePlugins: { preflight: false, } }</script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="./css/gallery.css">
-  </head>
+<div id="scrollSection1" data-images-per-set="5" data-animation-type="vertical" class="scroll-section mt-[-0.5rem] animate__animated animate__fadeInDownBig animate__delay-0.5s">
+                
+  <div class="text-center">
+    <button class="scrollUp btn modal-btn-title border-0">
+      <span class="text-[3rem] text-[black]">
+          <i class="fa-solid fa-angle-up"></i>
+      </span>
+    </button>
+  </div>
 
-  <body>
+  <div class="game-items-container text-center">
+    <div class="game-item">
+      <button id="gamebtn1" class="btn border-0 active">
+        <img class="invert h-[4rem] w-[4rem]" src="./assets/icons/FiveM-Logo.png">
+      </button>
+    </div>
+    <div class="game-item">
+      <button id="gamebtn2" class="btn border-0">
+        <img class="invert h-[4rem] w-[3rem]" src="./assets/icons/cyberpunk-logo.png">
+      </button>
+    </div>
+    <div class="game-item">
+      <button id="gamebtn3" class="btn border-0">
+        <img class="h-[4rem] w-[3.5rem]" src="./assets/icons/minecraft-logo.png">
+      </button>
+    </div>
+    <div class="game-item">
+      <button id="gamebtn4" class="btn border-0">
+        <img class="h-[4.2rem] w-[4rem]" src="./assets/icons/inzoi-logo.png">
+      </button>
+    </div>
+    <div class="game-item">
+      <button id="gamebtn5" class="btn border-0">
+        <img class="h-[4rem] w-[3.5rem]" src="./assets/icons/">
+      </button>
+    </div>
+  </div>
 
-    <section>
-      <div>
-        <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="logo d-none d-lg-block">
-            <img class="" src="./assets/icons/gallery-lane-icon.svg" width="60" height="60">
-          </div>
-          <div class="carousel-indicators carousel-nav">
-            <button class="d-none d-lg-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1">
-              <span class="d-none d-sm-block font-bold">Home</span>
-              <span class="d-sm-block d-md-none d-lg-none">
-                <i class="fa-solid fa-house"></i>
-              </span>
-            </button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2">
-              <span class="d-none d-sm-block font-bold">Updates</span>
-              <span class="d-sm-block d-md-none d-lg-none">
-                <i class="fa-solid fa-house"></i>
-              </span>
-            </button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3">
-              <span class="d-none d-sm-block font-bold">Gallery</span>
-              <span class="d-sm-block d-md-none d-lg-none">
-                <i class="fa-solid fa-house"></i>
-              </span>
-            </button>
-            <!-- mobile home screen -->
-            <button type="button" class="d-sm-block d-md-none d-lg-none" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1">
-              <span class="d-sm-block d-md-none d-lg-none">
-                <img class="" src="./assets/icons/gallery-lane-icon-mobile.svg" width="100" height="100">
-              </span>
-            </button>
-            <!-- mobile home screen -->
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4">
-              <span class="d-none d-sm-block font-bold">About</span>
-              <span class="d-sm-block d-md-none d-lg-none">
-                <i class="fa-solid fa-house"></i>
-              </span>
-            </button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5">
-              <span class="d-none d-sm-block font-bold">Contact</span>
-              <span class="d-sm-block d-md-none d-lg-none">
-                <i class="fa-solid fa-house"></i>
-              </span>
-            </button>
-          </div>
+  <div class="text-center">
+    <button class="scrollDown btn modal-btn-title border-0">
+      <span class="text-[3rem] text-[black]">
+        <i class="fa-solid fa-angle-down"></i>
+      </span>
+    </button>
+  </div>
 
-          <div class="carousel-inner">
+</div>
 
-            <div class="carousel-item p-5">
-              <div class="text-white pl-5 mt-2 md:pl-10 h-50 main-box animate__animated animate__fadeInDownBig animate__delay-0.5s">
-                <div class="font-semibold text-[2.5rem] md:text-[5rem]">Gallery Lane</div>
-                <div class="text-[1.5rem] md:pt-1 md:mx-12 md:pl-3 md:pb-1.5 md:border-l-4 md:leading-9 md:text-[2rem]"> Collection Of Frozen Time <br> Virtual Photography</div>
-                <div class="md:mt-4 md:pl-3">
-                  <button type="button" class="btn border-2 text-white w-45 main-box-btn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"><span class="font-bold">Explore</span></button>
-                </div>
-              </div>
-              <div class="flex flex-col md:flex-row h-50 mt-3">
-                <div class="bg-danger text-white text-end w-full h-100 md:pr-10 md:w-3/4 feature-box animate__animated animate__fadeInLeftBig animate__delay-1s">
-                  <div class="font-semibold text-[5rem]">Updates</div>
-                  <div class="md:text-[2rem] md:border-r-4 md:pb-1.5 md:pr-3 md:mx-7">Latest Exploration</div>
-                  <div class="md:mt-4">
-                    <button type="button" class="btn border-2 text-white w-45 main-box-btn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"><span class="font-bold">View</span></button>
+
+<div id="game1" class="h-100 px-[6.5rem]">
+  <div class="text-start text-[3rem] font-bold leading mt-[0.6rem] leading-[3.2rem] ml-[-0.25rem]">FiveM</div>
+  <div class="border-[1rem] flex justify-center items-center">
+    <input type="image" src="./assets/images/latest.png" style="width: 100%;" data-bs-toggle="modal" data-bs-target="#game1Modal">
+  </div>
+  <div class="absolute mt-[-5.5rem] ml-[2rem] text-white">
+    <div class="font-bold md:text-[1.9rem]">Alfa Romeo Stelvio</div>
+    <div class="md:text-[1rem] font-semibold md:mx-[0.22rem] md:-mt-2"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
+  </div>
+
+  <div class="modal fade" id="game1Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+      <div class="modal-content p-0" style="border-radius: 0px;">
+        <div class="modal-body flex justify-center items-center">
+          <div class="h-100 w-100">
+
+            <div class="relative flex justify-center items-center">
+
+              <div id="game1section1" class="transition-opacity duration-300 animate__animated">
+                <div>
+                  <img src="./assets/images/latest.png" width="100%">   
+                  <div class="d-none d-sm-block" >                          
+                    <div data-section="alfaromeo" data-section-index="1"  class="animate__animated animate__fadeInRight text-white absolute bottom-5 left-5 pointer-events-none">
+                      <div class="font-bold md:text-[1.9rem]">Alfa Romeo Stelvio</div>
+                      <div class="md:text-[1rem] font-semibold md:mx-[0.22rem] md:-mt-2"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
+                    </div> 
                   </div>
-                </div>
-                <div class="bg-warning justify-center items-center w-full flex h-100 md:w-1/4 md:ml-3 about-box">
-                  <div class="home-abt-btn-container">
-                    <button class="btn border-0 about-box-btn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"><span class="font-bold xxl:text-[4rem]">About</span></button>
+                  <div class="gallery-modal-btn-group d-none d-sm-block z-10">
+                    <button class="btn modal-btn-title border-0" data-toggle-pair="alfaromeo">
+                      <span class="md:text-[3rem] text-center">
+                        <i class="fa-solid fa-circle-info"></i>
+                      </span>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="carousel-item active">
-              <div class="flex justify-center items-center latest-page p-3">
-                <div class="photo-bg flex justify-start items-end md:w-[50rem] 2xl:w-[100rem] xxl: bg-white shadow-2xl shadow-gray-950 p-3">
-                  <div class="spotlight-container absolute inset-0 m-auto z-10 pointer-events-none md:w-[30rem] 2xl:w-[60rem] animate__animated animate__fadeInDown animate__delay-0.5s">
-                    <img src="./assets/images/sl.png">
+            <div id="scrollSection2" data-images-per-set="7" data-animation-type="horizontal" class="scroll-section flex justify-center items-center">
+              <div class="text-center">
+                <button class="scrollUp btn modal-btn-title border-0">
+                  <span class="text-[3rem] text-[black]">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="game-items-container flex justify-center items-center">
+                <div class="game-item">
+                  <div class="w-[9rem] flex justify-center items-center gallery-modal-btn">
+                    <button id="game1btn1"><img src="./assets/images/latest.png" alt=""></button>
                   </div>
-                  <div class="latest-photo-container relative items-center">
-                    <input data-bs-toggle="modal" data-bs-target="#exampleModalToggle" class="latest-img" data-bs-toggle="modal" width="100%" type="image" src="./assets/images/latest.png">
-                    <div class="latest-photo-details px-4 text-white md:absolute md:bottom-6 md:leading-10 pointer-events-none">
-                      <div class="font-bold text-[1.9rem] 2xl:text-[4rem]">Alfa Romeo Stelvio</div>
-                      <div class="text-[1rem] font-semibold md:mx-[0.22rem] md:-mt-2 2xl:text-[2rem]"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
-                    </div>
+                </div>
+                <div class="game-item">
+                  <div class="w-[9rem] flex justify-center items-center gallery-modal-btn">
+                    <button id="game1btn2"><img src="./assets/images/rx8.png" alt=""></button>
+                  </div>
+                </div>
+                <div class="game-item">
+                  <div class="w-[9rem] flex justify-center items-center gallery-modal-btn">
+                    <button id="game1btn3"><img src="./assets/images/porsche911.png" alt=""></button>
+                  </div>
+                </div>
+                <div class="game-item">
+                  <div class="w-[9rem] flex justify-center items-center gallery-modal-btn">
+                    <button id="game1btn4"><img src="./assets/images/gr86.png" alt=""></button>
+                  </div>
+                </div>
+                <div class="game-item">
+                  <div class="w-[9rem] flex justify-center items-center gallery-modal-btn">
+                    <button id="game1btn5"><img src="./assets/images/s14.png" alt=""></button>
                   </div>
                 </div>
               </div>
+              <div class="text-center">
+                <button class="scrollDown btn modal-btn-title border-0">
+                  <span class="text-[3rem] text-[black]">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
 
-              <!-- modal section -->
-              <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                  <div class="modal-content" style="border-radius: 0px;">
-                    <div class="modal-body">
-                      <div>
-                        <img src="./assets/images/latest.png" width="100%">
-                        
-                        <div id="section1" class="transition-opacity duration-300 opacity-0 hidden opacity-0 animate__animated modal-photo-title px-4 text-white md:absolute md:bottom-6 md:mb-5 md:leading-10 pointer-events-none">
-                          <div class="font-bold text-[1.9rem]">Alfa Romeo Stelvio</div>
-                          <div class="text-[1rem] font-semibold md:mx-[0.22rem] md:-mt-2 2xl:text-[2rem]"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="scrollSection2" data-images-per-set="7" data-animation-type="horizontal" class="scroll-section flex justify-center items-center">
+  <div class="text-center">
+    <button class="scrollUp btn modal-btn-title border-0">
+      <span class="text-[3rem] text-[black]">
+        <i class="fa-solid fa-chevron-left"></i>
+      </span>
+    </button>
+  </div>
+  <div class="game-items-container flex justify-center items-center">
+    <div class="game-item">
+      <div class="w-[9rem] flex justify-center items-center gallery-modal-btn">
+        <button id="game1btn1"><img src="./assets/images/latest.png" alt=""></button>
+      </div>
+    </div>
+    <div class="game-item">
+      <div class="w-[9rem] flex justify-center items-center gallery-modal-btn">
+        <button id="game1btn2"><img src="./assets/images/rx8.png" alt=""></button>
+      </div>
+    </div>
+    <div class="game-item">
+      <div class="w-[9rem] flex justify-center items-center gallery-modal-btn">
+        <button id="game1btn3"><img src="./assets/images/porsche911.png" alt=""></button>
+      </div>
+    </div>
+    <div class="game-item">
+      <div class="w-[9rem] flex justify-center items-center gallery-modal-btn">
+        <button id="game1btn4"><img src="./assets/images/gr86.png" alt=""></button>
+      </div>
+    </div>
+    <div class="game-item">
+      <div class="w-[9rem] flex justify-center items-center gallery-modal-btn">
+        <button id="game1btn5"><img src="./assets/images/s14.png" alt=""></button>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <button class="scrollDown btn modal-btn-title border-0">
+      <span class="text-[3rem] text-[black]">
+        <i class="fa-solid fa-chevron-right"></i>
+      </span>
+    </button>
+  </div>
+</div>
+
+              <div class="h-100 w-100">
+
+                  <div id="game1" class="h-100 flex">
+                    <div class="h-100 w-[25%] bg-[black] text-white p-3 ">
+                      <div class="h-100 w-100 animate__animated animate__fadeInDownBig animate__delay-0.5s">
+                        <div class="leading-10 pt-[5rem] text-[2.4rem] font-bold">
+                          <div>Welcome </div>
+                          <div>To the world </div>
+                          <div>Of GTA5:FiveM</div>
                         </div>
-
-                        <div id="section2" class="transition-opacity duration-300 hidden opacity-0 animate__animated modal-photo-details w-[69.1rem] h-[29rem] md:px-[1rem] md:pt-[1rem] text-white md:absolute top-4">
-                          <div class="flex justify-center text-center">
-                            <div class="w-2/3 px-[1.5rem]">
-                              <div class="md:text-[3.5rem] md:border-b-[0.2rem] md:w-[35rem] md:font-semibold md:mb-[2rem]">Alfa Romeo Stelvio</div>
-                              <div class="md:leading-8 pl-[1rem] mb-[2rem] text-start">
-                                <div class="md:text-[1rem] md:leading-[1rem] h-[10rem]" style="overflow-y: scroll;">
-                                  <p style="width: clamp(45ch, 100% , 75ch);">The Alfa Romeo Stelvio (Type 949) is a car produced by the Italian manufacturer Alfa Romeo since 2016. As a D-segment model it slots above the smaller Tonale model in the marque's SUV range. A compact crossover SUV, it was first revealed at the 2016 Los Angeles Auto Show, introduced by a 60" short film directed by Louis Sebastian Pane, and entered production at the Cassino Plant at the end of 2016. In 2018 it was Alfa Romeo's best-selling model, with roughly 43,000 sold that year.</p>
-                                  <p style="width: clamp(45ch, 100% , 75ch);">The Stelvio uses the same Giorgio platform already used by the Giulia,but slightly modified and raised by 22 cm (8.7 in).The Stelvio also shares the same engines and most of the mechanics, including a carbon-fibre driveshaft. In addition, its track width has increased by 2.9 cm (1.1 in) in the rear and 5.4 cm (2.1 in) in the front. It has a boot capacity of 525 L (18.5 cu ft).The boot sill is aligned with the rear bumper and cargo does not need to be lifted over a lip when being removed. There are large vehicle blind spots behind the car's pillars.It has a 50/50 weight distribution and a drag coefficient of 0.32 (Cd).Euro NCAP classify it as a large off-road car.</p>
-                                </div>
-                              </div>
-                              <div class="bg-[#ffff] md:h-[5rem] md:w-[43.5rem] md:px-[1.7rem] md:pt-[0.5rem] absolute bottom-16 text-dark text-start md:leading-6">
-                                <div class="md:font-bold md:text-[1.5rem] uppercase">Additional Information</div>
-                                <div class="flex">
-                                  <div class="md:mr-[0.4rem] md:text-[1rem] md:font-semibold">Resolution: 3440 X 1440</div>
-                                  <div class="md:mr-[0.4rem] md:text-[1rem] md:font-semibold">Settings: ULTRA</div>
-                                  <div class="md:text-[1rem] md:font-semibold">Render: 5K</div>
-                                </div>
-                                <div class="flex md:-mt-[0.4rem]">
-                                  <div class="md:mr-[0.4rem] md:text-[1rem] md:font-semibold">Game: GTA 5 FIVEM</div>
-                                  <div class="md:mr-[0.4rem] md:text-[1rem] md:font-semibold">Server: FiveM SpeedLab WL</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="w-1/3">
-                              <div class="border-l-[0.3rem] mt-[1rem] h-[16rem] w-[15rem]">
-                                <div class="text-start md:p-8 leading-7">
-                                  <div class="text-[1.3rem] mb-[1rem]">
-                                    <div class="uppercase font-bold">Photographer</div>
-                                    <div class="font-semibold">JRVP08</div>
+                        <div class="mt-[0.5rem] text-[0.8rem] font-semibold">A collection of frozen time in the world of FiveM</div>
+                      </div>
+                      <div class="animate__animated animate__fadeInUpBig animate__delay-0.5s">
+                        <div class="relative">
+                          <div class="absolute bottom-34 w-100 h-100">
+                            <div class="font-bold mb-[0.5rem]">Updates:</div>
+                            <div>
+                              <div id="scrollSection2" data-images-per-set="5" data-animation-type="vertical" class="scroll-section flex">
+                                <div class="game-items-container w-100">
+                                  <div class="game-item">
+                                    <div class="font-bold leading-5">Alfa Romeo Stelvio - <span class="font-semibold">03/10/2025</span></div>
                                   </div>
-                                  <div class="text-[1.3rem] mb-[1rem]">
-                                    <div class="uppercase font-bold">Date</div>
-                                    <div class="font-semibold">03/11/2025</div>
+                                  <div class="game-item">
+                                    <div class="font-bold leading-5">Toyota GR86 - <span class="font-semibold">03/10/2025</span></div>
                                   </div>
-                                  <div class="text-[1.3rem]">
-                                    <div class="uppercase font-bold">Mods</div>
-                                    <div class="font-semibold">
-                                      <div>QUANT V</div>
-                                      <div>SG PROJECT</div>
-                                      <div>LA REVO</div>
-                                      <div>5Real</div>
-                                      <div>ENB</div>
-                                      <div>RESHADE</div>
+                                  <div class="game-item">
+                                    <div class="font-bold leading-5">Mazda RX8 - <span class="font-semibold">03/10/2025</span></div>
+                                  </div>
+                                  <div class="game-item">
+                                    <div class="font-bold leading-5">Porsche 991.5R - <span class="font-semibold">03/10/2025</span></div>
+                                  </div>
+                                  <div class="game-item">
+                                    <div class="font-bold leading-5">Dodge Charger - <span class="font-semibold">03/10/2025</span></div>
+                                  </div>
+                                  <div class="game-item">
+                                    <div class="font-bold leading-5">Alfa Romeo Stelvio - <span class="font-semibold">03/10/2025</span></div>
+                                  </div>
+                                </div>
+                                <div class="flex justify-center items-center w-[10%] h-100">
+                                  <div class="text-center">
+                                    <button class="scrollUp btn modal-btn-title border-0">
+                                      <span class="text-[1.6rem] text-white">
+                                        <i class="fa-solid fa-chevron-up"></i>
+                                      </span>
+                                    </button>
+                                    <div class="text-center">
+                                      <button class="scrollDown btn modal-btn-title border-0">
+                                        <span class="text-[1.6rem] text-white">
+                                          <i class="fa-solid fa-chevron-down"></i>
+                                        </span>
+                                      </button>
                                     </div>
                                   </div>
                                 </div>
@@ -166,71 +239,248 @@
                             </div>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                    
+                    <div class="w-[75%] bg-primary">
+                      <div class="border-[0.5rem] border-[black] flex justify-center items-center">
+                        <input type="image" src="./assets/images/latest.png" class="gallery-img-btn">
+                      </div>
+                    </div>
+                  </div>
 
-                        <div id="section3" class="transition-opacity duration-300 opacity-0 hidden opacity-0 animate__animated modal-photo-title px-4 text-white md:absolute md:bottom-6 md:mb-5 md:leading-10 pointer-events-none">
-                          <div class="font-bold text-[1.9rem]">Alfa Romeo Stelvio</div>
-                          <div class="text-[1rem] font-semibold md:mx-[0.22rem] md:-mt-2 2xl:text-[2rem]"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
-                        </div>
+                </div>
 
-                      <div class="modal-btn-group">
-                        <div class="mb-1">
-                          <button id="btn1" class="btn modal-btn-title border-0 active">
-                            <span class="text-[3rem] text-center">
-                              <i class="fa-solid fa-comment"></i>
-                            </span>
-                          </button>
-                        </div>
-                        <div class="mb-1">
-                          <button id="btn2" class="btn modal-btn-details border-0 ">
-                            <span class="text-[3rem] text-center">
-                              <i class="fa-solid fa-circle-info"></i>
-                            </span>
-                          </button>
-                        </div>
-                        <div class="mb-1">
-                          <button id="btn3" class="btn modal-btn-title border-0">
-                            <span class="text-[3rem] text-center">
-                              <i class="fa-solid fa-comment"></i>
-                            </span>
-                          </button>
+
+
+                <div class="h-100 w-[30%] p-3">
+                  <div class="h-100 flex justify-start mt-[5rem]">
+                    <div class="bg-[white] w-100">
+                      <div class="text-[3rem] font-bold leading-13">Welcome <br> To the FiveM <br> Photo collection</div>
+                      <div class="mt-[0.5rem] mb-[1rem] text-[1rem]">Collection of frozen time in the world of FiveM</div>
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <div class="absolute bottom-[13rem] w-100 h-100">
+                      <div class="font-bold">Updates:</div>
+                      <div>
+                        <div id="scrollSection2" data-images-per-set="5" data-animation-type="vertical" class="scroll-section flex">
+                          <div class="game-items-container w-100">
+                            <div class="game-item">
+                              <div class="font-bold leading-5">Alfa Romeo Stelvio - <span class="font-semibold">03/10/2025</span></div>
+                            </div>
+                            <div class="game-item">
+                              <div class="font-bold leading-5">Toyota GR86 - <span class="font-semibold">03/10/2025</span></div>
+                            </div>
+                            <div class="game-item">
+                              <div class="font-bold leading-5">Mazda RX8 - <span class="font-semibold">03/10/2025</span></div>
+                            </div>
+                            <div class="game-item">
+                              <div class="font-bold leading-5">Porsche 991.5R - <span class="font-semibold">03/10/2025</span></div>
+                            </div>
+                            <div class="game-item">
+                              <div class="font-bold leading-5">Dodge Charger - <span class="font-semibold">03/10/2025</span></div>
+                            </div>
+                            <div class="game-item">
+                              <div class="font-bold leading-5">Alfa Romeo Stelvio - <span class="font-semibold">03/10/2025</span></div>
+                            </div>
+                          </div>
+                          <div class="flex justify-center items-center w-[10%] h-100">
+                            <div class="text-center">
+                              <button class="scrollUp btn modal-btn-title border-0">
+                                <span class="text-[1.6rem] text-[black]">
+                                  <i class="fa-solid fa-chevron-up"></i>
+                                </span>
+                              </button>
+                              <div class="text-center">
+                                <button class="scrollDown btn modal-btn-title border-0">
+                                  <span class="text-[1.6rem] text-[black]">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- modal section -->
-            </div>
-
-            <div class="carousel-item">
-              test3
-            </div>
-
-            <div class="carousel-item abt-page">
-              <div class="flex flex-col md:flex-row h-100">
-                <div class="abt-img w-full md:w-1/2 md:p-4 md:mt-2 d-none d-sm-block gallery animate__animated animate__fadeInDownBig animate__delay-0.8s"></div>
-                <div class="w-full h-100 -p-1 md:w-1/2 md:ml-4 md:p-4 animate__animated animate__fadeInUpBig animate__delay-0.8s abt-msg">
-                  <div class="abt-title md:mt-20 font-bold">About</div>
-                  <p class="text-start font-thin abt-p">This website is not just a project to be included in my portfolio, this website will also showcase my photography collection that I have taken in the virtual world that I explored.</p>
-                  <P class="text-start font-thin abt-p">Photography can be anything we just need to look at it properly. The subject does not matter everything can be a subject in photography. that's why I created this website to show the world that no matter how bad or how good the graphics are, all we need is just the right angle and creativity to produce great photography.</P>
-                  <P class="text-start font-thin abt-p">With that being said I hope you enjoy exploring my small gallery and understand the perspective behind every photo i display here.</P>
-                  <p class="text-start font-thin abt-p">─ JRVP08</p>
+                <div class="bg-success h-100 w-[70%] flex">
+                  <div class="bg-warning h-100 w-100"></div>
+                  <div class="bg-primary h-100 w-[15%] flex justify-center items-center">
+                    
+                  </div>
                 </div>
-              </div>
-            </div>
+                
+                <div class="absolute w-100 flex justify-center top-22 pointer-events-none z-10">
+                  <img src="./assets/images/gallery-sl2.png" style="width: 300px;">
+                </div>
+                <div class="bg-white w-[8%] h-100  2xl:w-[5%] border-r-[0.2rem] flex justify-center items-center z-5">
+                  <div id="scrollSection1" data-images-per-set="5" data-animation-type="vertical" class="scroll-section mt-[-0.5rem] animate__animated animate__fadeInDownBig animate__delay-0.5s">
+                    <div class="text-center">
+                      <button class="scrollUp btn modal-btn-title border-0">
+                        <span class="text-[3rem] text-[black]">
+                            <i class="fa-solid fa-angle-up"></i>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="game-items-container text-center">
+                      <div class="game-item">
+                        <button id="gamebtn1" class="btn border-0 active">
+                          <img class="invert h-[4rem] w-[4rem]" src="./assets/icons/FiveM-Logo.png">
+                        </button>
+                      </div>
+                      <div class="game-item">
+                        <button id="gamebtn2" class="btn border-0">
+                          <img class="invert h-[4rem] w-[3rem]" src="./assets/icons/cyberpunk-logo.png">
+                        </button>
+                      </div>
+                      <div class="game-item">
+                        <button id="gamebtn3" class="btn border-0">
+                          <img class="h-[4rem] w-[3.5rem]" src="./assets/icons/minecraft-logo.png">
+                        </button>
+                      </div>
+                      <div class="game-item">
+                        <button id="gamebtn4" class="btn border-0">
+                          <img class="h-[4.2rem] w-[4rem]" src="./assets/icons/inzoi-logo.png">
+                        </button>
+                      </div>
+                      <div class="game-item">
+                        <button id="gamebtn5" class="btn border-0">
+                          <img class="h-[4rem] w-[3.5rem]" src="./assets/icons/">
+                        </button>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button class="scrollDown btn modal-btn-title border-0">
+                        <span class="text-[3rem] text-[black]">
+                          <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-100 w-[84%] 2xl:w-[90%]">
 
-            <div class="carousel-item">
-              test3
-            </div>
+                  <div class="gallery-roof h-[8%] flex justify-center px-[0.5rem]">
+                    <div class="border-x-[0.2rem] border-b-[0.2rem] h-[4rem] w-100 mt-[-0.4rem] gallery-main-roof"></div>
+                  </div>
 
-          </div>
-        </div>
+                  <div class="h-[84%] flex justify-center items-center px-[2.25rem] 2xl:px-[7rem]">
+                    <div class="border-x-[0.14rem] w-100 h-100 px-[8rem] py-[4rem] 2xl:px-[16rem]">
+                      <div class="border-[0.3rem] h-100 w-100 px-[3rem]">
 
-      </div>
-    </section>
-   
-  </body>                    
+                        <div id="game1" class="px-[4rem] 2xl:px-[25rem]">
+                          <div class="text-[3rem] font-bold ml-[-0.2rem] leading-15 mt-[1rem] 2xl:mt-[5.5rem] 2xl:text-[6rem] 2xl:leading-25 2xl:ml-[-0.4rem]">FiveM</div>
+                          <div class="flex justify-center items-center border-[0.5rem]">
+                            <input class="gallery-img-btn" type="image" src="./assets/images/latest.png" data-bs-toggle="modal" data-bs-target="#game1Modal">
+                          </div>
+                          <div class="absolute mt-[-5rem] ml-[1.5rem] text-white">
+                            <div class="font-bold md:text-[1.9rem]">Alfa Romeo Stelvio</div>
+                            <div class="md:text-[1rem] font-semibold md:mx-[0.22rem] md:-mt-2"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
+                          </div>
+                        </div>
 
-  <script src="./js/js and HTML backup/section-toggle-animations.js" defer></script>
-  
-</html>
+                        <div id="game2" class="px-[4rem] 2xl:px-[25rem] transition-opacity duration-300 hidden opacity-0 animate__animated">
+                          <div class="text-[3rem] font-bold ml-[-0.2rem] leading-15 mt-[1rem] 2xl:mt-[5.5rem] 2xl:text-[6rem] 2xl:leading-25 2xl:ml-[-0.4rem]">CP2077</div>
+                          <div class="flex justify-center items-center border-[0.5rem]">
+                            <input class="gallery-img-btn" type="image" src="./assets/images/CYBERPHOTO.png">
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="gallery-floor h-[8%] flex justify-center px-[0.5rem]">
+                    <div class="gallery-main-floor border-x-[0.2rem] border-t-[0.2rem] h-[6rem] w-100 mt-[-0.7rem] "></div>
+                  </div>
+
+                </div> -->
+                <div class="bg-white h-100 w-[8%] 2xl:w-[5%] border-l-[0.2rem] flex justify-center items-center z-5"></div> -->
+
+                <div id="game2" class="h-100 w-100 bg-white mt-[1.5rem] transition-opacity duration-300 hidden opacity-0 ">
+                  <div class="h-[85%] w-100 flex pt-[1rem]">
+                    <div class="h-100 w-[20%] bg-white">
+                      <div class="h-[15%] p-2">
+                        <div class="h-100 flex justify-start items-center">
+                          <div>
+                            <img src="./assets/icons/FiveM-Logo.png" class="invert h-[3rem]">
+                          </div>
+                          <div class="text-[3rem] font-semibold mt-[-0.2rem]">CP2077</div>
+                        </div>
+                      </div>
+                      <div class="h-[85%] w-100 bg-white flex justify-center items-center">
+                        <div class="h-100 w-[30%] flex justify-start items-center">
+                          <div class="text-[5rem] w-[5rem] h-[15rem] font-bold text-[black] mt-[2rem]">
+                            <div class="rotate-270 leading-24">to</div>
+                            <div class="rotate-270 leading-25 z-10">ho</div>
+                            <div class="rotate-270 leading-0">P</div>
+                          </div>
+                        </div>
+                        <div class="w-[70%] h-100 px-2 flex justify-start items-center">
+                          <div class="mb-[-0.8rem] text-[black] mt-[6.8rem]">
+                            <div class="text-[2rem] font-bold leading-10">Collection</div>
+                            <div class="bg-[black] h-[0.2rem] w-[6.5rem] mb-[0.3rem]"></div>
+                            <div class="leading-4 font-semibold text-[black]">
+                              <p>Welcome to my collection of frozen time in the world of CP2077 may the spirit of inspiration joins your journey here</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="absolute left-12 mt-[10.4%] ">
+                          <div class="bg-[black] h-[14px] w-[4.6rem] z-5"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="game2section1" class="h-100 w-[80%] pr-8">
+                      <div class="w-100 h-[15%] flex justify-center items-center">
+                        <div class="w-[50%] h-100 flex justify-start items-center py-2">
+                          <div class="font-semibold text-[2rem] mt-[0.2rem]">Alfa Romeo Stelvio</div>
+                        </div>
+                        <div class="w-[50%] h-100 flex justify-end items-center py-2">
+                          <div class="font-semibold text-[2rem] mt-[0.2rem]">MDY MARCH 10 - 2025</div>
+                        </div>
+                      </div>
+                      <div class="h-[85%] flex justify-start items-center pb-1">
+                        <input type="image" src="./assets/images/latest.png" class="w-100 h-100" data-bs-toggle="modal" data-bs-target="#game1Modal">
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="h-[15%] w-100 flex justify-center items-center">
+                    <div id="scroll-section3" data-images-per-set="3" data-animation-type="horizontal" class="scroll-section flex justify-start items-center h-100 w-100">
+                      <div class="text-center game-scroll-btn">
+                        <button class="scrollUp btn modal-btn-title border-0">
+                          <span class="text-[1.5rem] text-[black]">
+                              <i class="fa-solid fa-angle-left"></i>
+                          </span>
+                        </button>
+                      </div>
+                      
+                      <div class="game-items-container flex">
+                        <div class="game-item">
+                          <input id="game1btn1" type="image" src="./assets/images/latest.png" class="h-[3rem]">
+                        </div>
+                        <div class="game-item">
+                          <input id="game1btn2" type="image" src="./assets/images/rx8.png" class="h-[3rem]">
+                        </div>
+                        <div class="game-item">
+                          <input id="game1btn3" type="image" src="./assets/images/gr86.png" class="h-[3rem]">
+                        </div>
+                        <div class="game-item">
+                          <input id="game1btn4" type="image" src="./assets/images/gr86.png" class="h-[3rem]">
+                        </div>
+                      </div>
+                      
+                      <div class="text-center game-scroll-btn">
+                        <button class="scrollDown btn modal-btn-title border-0">
+                          <span class="text-[1.5rem] text-[black]">
+                            <i class="fa-solid fa-angle-right"></i>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>

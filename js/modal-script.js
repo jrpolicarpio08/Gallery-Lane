@@ -89,8 +89,14 @@ document.addEventListener("DOMContentLoaded", function () {
   toggleButtons.forEach((btn) => {
     const pairId = btn.getAttribute("data-toggle-pair");
 
-    const section1 = document.querySelector(`[data-section="${pairId}"][data-section-index="1"]`);
-    const section2 = document.querySelector(`[data-section="${pairId}"][data-section-index="2"]`);
+    const section1 = document.querySelector(
+      `[data-section="${pairId}"][data-section-index="1"]`
+    );
+    const section2 = document.querySelector(
+      `[data-section="${pairId}"][data-section-index="2"]`
+    );
+
+    if (!section1 || !section2) return;
 
     let showingSection1 = true;
     let isAnimating = false;
@@ -127,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     }
 
+    // Make sure the button works on click
     btn.addEventListener("click", () => {
       if (isAnimating) return;
       isAnimating = true;
@@ -150,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Optional: Show section 1 by default, hide section 2
+    // Initial setup
     section1.classList.remove("hidden");
     section2.classList.add("hidden");
   });
