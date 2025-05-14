@@ -253,6 +253,7 @@ body{ scroll-behavior: smooth;}
 
     .game-img-container{ padding: 0.5rem 0.5rem 0rem 0.5rem; }
 
+    .game-scroll-btn{ opacity: 1; }
 }
 
 @media screen and (min-width: 1280px) { 
