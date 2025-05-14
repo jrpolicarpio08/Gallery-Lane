@@ -78,7 +78,7 @@
                 </div>
               </div>
               <div class="flex flex-col md:flex-row h-[50%] mt-3">
-                <div class="w-[75%] bg-success text-white text-end flex justify-end items-center feature-box animate__animated animate__fadeInLeftBig animate__delay-1s">
+                <div class="h-100 sm:h-[50%] sm:w-100 md:w-[75%] bg-success text-white text-end flex justify-end items-center feature-box animate__animated animate__fadeInLeftBig animate__delay-1s">
                   <div class="px-5 mt-[-1.5rem]">
                     <div class="font-semibold text-[5rem] leading-25">Updates</div>
                     <div class="md:text-[2rem] md:border-r-4 md:pb-1.5 md:pr-3 md:mx-7">Latest Exploration</div>
@@ -87,7 +87,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="w-[25%] bg-warning ml-[1rem] flex justify-center items-center about-box">
+                <div class="h-100 sm:h-[50%] sm:w-100 md:w-[25%] bg-warning md:ml-[1rem] flex justify-center items-center about-box">
                   <button class="btn border-0 about-box-btn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"><span class="font-bold xxl:text-[4rem]">About</span></button>
                 </div>
               </div>
@@ -122,12 +122,12 @@
 
             <!-- gallery screen -->
             <div class="carousel-item active">
-              <div class="bg-[#BBB8B1] h-100 w-100 p-5">
+              <div class="gallery-container bg-[#BBB8B1] h-[100%] w-[100%]">
 
                 <div id="game1" class="h-100 w-100 bg-white mt-[1.5rem]">
-                  <div class="h-[85%] w-100 flex pt-[1rem]">
-                    <div class="h-100 w-[20%] bg-white">
-                      <div class="game-title-container h-[15%] p-2 animate__animated animate__fadeInDown animate__delay-1s">
+                  <div class="h-[85%] w-[100%] flex flex-col md:flex-row pt-[1rem]">
+                    <div class="game-container md:h-[100%] md:w-[20%] ">
+                      <div class="md:h-[15%] p-2 animate__animated animate__fadeInDown animate__delay-1s">
                         <div class="h-100 flex justify-start items-center text-[black]">
                           <div>
                             <img src="./assets/icons/FiveM-Logo.png" class="game-title-icon invert h-[3rem]">
@@ -135,7 +135,7 @@
                           <div class="game-title text-[3rem] font-semibold mt-[-0.2rem]">FiveM</div>
                         </div>
                       </div>
-                      <div class="h-[85%] w-100 flex justify-center items-center">
+                      <div class="h-[85%] w-100 flex justify-center items-center pc-design">
                         <div class="h-100 w-[30%] flex justify-start items-center animate__animated animate__fadeInLeft animate__delay-1s">
                           <div class="photo-lettering text-[5rem] w-[5rem] h-[15rem] font-bold text-[black] mt-[2rem]">
                             <div class="photo-lettering-to rotate-270 leading-[6rem]">to</div>
@@ -158,26 +158,59 @@
                       </div>
                     </div>
 
-                    <div id="game1section1" class="h-100 w-[80%] pr-8">
-                      <div class="w-100 h-[15%] flex justify-center items-center animate__animated animate__fadeInRight animate__delay-1s">
-                        <div class="w-[50%] h-100 flex justify-start items-center py-2">
-                          <div class="game-img-title font-semibold text-[2rem] mt-[0.2rem]">Alfa Romeo Stelvio</div>
+                    <div class="h-[35%] w-100 d-sm-block d-md-none d-lg-none">
+                      <div class="h-[100%] w-[100%]">
+                        <div class="bg-[black] w-[75%] h-[40%] p-2 flex justify-start items-center">
+                          <div>
+                            <img src="./assets/icons/FiveM-Logo.png" class="game-title-icon h-[3rem]">
+                          </div>
+                          <div class="game-title text-[3rem] text-white font-semibold mt-[-0.2rem]">FiveM</div>
                         </div>
-                        <div class="w-[50%] h-100 flex justify-end items-center py-2">
-                          <div class="game-img-date font-semibold text-[2rem] mt-[0.2rem]">MDY MARCH 10 - 2025</div>
+                        <div class="mt-[1rem] px-2 text-[black]">
+                          <div class="text-[1.5rem] font-bold">Photo Collection</div>
+                          <div class="collection-divider bg-[black] h-[0.2rem] w-[9.5rem] mb-[0.3rem]"></div>
+                          <div class="collection-p leading-4 font-semibold">
+                            <p>Welcome to my collection of frozen time in the world of FiveM may the spirit of inspiration joins your journey here</p>
+                          </div>
                         </div>
                       </div>
-                      <div class="h-[85%] flex justify-start items-center pb-1 animate__animated animate__fadeIn animate__delay-1s">
+                    </div>
+
+                    <div id="game1section1" class="game-img-section h-[35%] md:h-[100%] w-[100%] md:w-[80%] md:pr-8">
+                      <div class="w-100 h-[15%] flex justify-center items-center animate__animated animate__fadeInRight animate__delay-1s text-[black] game-title-date-container">
+                        <div class="w-[50%] h-[100%] flex justify-start items-center py-2">
+                          <div class="game-img-title font-semibold md:text-[2rem] mt-[0.2rem]">Alfa Romeo Stelvio</div>
+                        </div>
+                        <div class="w-[50%] h-[100%] flex justify-end items-center py-2">
+                          <div class="game-img-date font-semibold md:text-[2rem] mt-[0.2rem]">MDY MARCH 10 - 2025</div>
+                        </div>
+                      </div>
+
+                      <div class="h-[15%] w-[100%] flex justify-center items-center d-sm-block d-md-none d-lg-none">
+                        <div class="w-[50%] h-100 flex justify-start items-center py-2 px-2">
+                          <div class="game-img-title font-semibold text-[1.05rem] mt-[0.2rem]">Alfa Romeo Stelvio</div>
+                        </div>
+                        <div class="w-[50%] h-100 flex justify-end items-center py-2 px-2">
+                          <div class="game-img-date font-semibold text-[0.98rem] mt-[0.2rem]">MDY MAR. 10 - 2025</div>
+                        </div>
+                      </div>
+
+                      <div class="game-img-container h-[85%] flex justify-start items-center animate__animated animate__fadeIn animate__delay-1s">
                         <input type="image" src="./assets/images/latest.png" class="w-100 h-100" data-bs-toggle="modal" data-bs-target="#game1Modal">
                       </div>
+
+                    </div>
+
+                    <div class="h-[30%] w-100 bg-danger d-sm-block d-md-none d-lg-none">
+
                     </div>
 
                   </div>
                   <div class="h-[15%] w-100 flex justify-center items-center animate__animated animate__fadeInUp animate__delay-1s">
                     <div id="scroll-section2" data-images-per-set="3" data-animation-type="horizontal" class="scroll-section flex justify-start items-center h-100 w-100">
-                      <div class="text-center game-scroll-btn">
+                      <div class="game-scroll-btn flex justify-center items-center">
                         <button class="scrollUp btn modal-btn-title border-0">
-                          <span class="text-[1.5rem] text-[black]">
+                          <span class="text-[1.5rem] text-[black] game-scroll-btn-icon">
                               <i class="fa-solid fa-angle-left"></i>
                           </span>
                         </button>
@@ -198,9 +231,9 @@
                         </div>
                       </div>
                       
-                      <div class="text-center game-scroll-btn">
+                      <div class="game-scroll-btn flex justify-center items-center">
                         <button class="scrollDown btn modal-btn-title border-0">
-                          <span class="text-[1.5rem] text-[black]">
+                          <span class="text-[1.5rem] text-[black] game-scroll-btn-icon">
                             <i class="fa-solid fa-angle-right"></i>
                           </span>
                         </button>
@@ -297,7 +330,7 @@
                 <div id="scroll-section1" data-images-per-set="1" data-animation-type="horizontal" class="scroll-section fixed right-10 bottom-5 flex justify-end h-[15%] w-50 p-2 animate__animated animate__fadeInUp animate__delay-1s">
                   <div class="game-scroll-btn flex justify-center items-center">
                     <button class="scrollUp btn modal-btn-title border-0">
-                      <span class="text-[1.5rem] text-[black]">
+                      <span class="text-[1.5rem] text-[black] game-scroll-btn-icon">
                           <i class="fa-solid fa-angle-left"></i>
                       </span>
                     </button>
@@ -330,7 +363,7 @@
                   
                   <div class="game-scroll-btn flex justify-center items-center">
                     <button class="scrollDown btn modal-btn-title border-0">
-                      <span class="text-[1.5rem] text-[black]">
+                      <span class="text-[1.5rem] text-[black] game-scroll-btn-icon">
                         <i class="fa-solid fa-angle-right"></i>
                       </span>
                     </button>
