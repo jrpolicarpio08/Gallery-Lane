@@ -251,7 +251,7 @@ body{ scroll-behavior: smooth;}
 
     .game-title-date-container{ display: none; }
 
-    .game-img-container{ padding: 0.5rem 0.5rem 0rem 0.5rem; }
+    .game-img-container{ padding: 0rem 0.5rem 0rem 0.5rem; }
 
     .game-scroll-btn{ opacity: 1; }
 }
