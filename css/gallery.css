@@ -150,6 +150,8 @@ body{ scroll-behavior: smooth;}
     transform: translate(-50% , -50%);
 }
 
+.divider-sm-screen { display: none; }
+
 .abt-page{ padding: 3rem; }
 
 .abt-img{
@@ -254,6 +256,22 @@ body{ scroll-behavior: smooth;}
     .game-img-container{ padding: 0rem 0.5rem 0rem 0.5rem; }
 
     .game-scroll-btn{ opacity: 1; }
+}
+
+@media screen and (height: 667px) { 
+    .author-device{ display: none; }
+
+    .divider-sm-screen { display: flex;}
+
+    .divider-sm-screen-line { margin-bottom: 0.5rem; }
+}
+
+@media screen and (height: 720px) { 
+    .author-device{ display: none; }
+
+    .divider-sm-screen { display: flex;}
+
+    .divider-sm-screen-line { margin-bottom: -0.7rem; }
 }
 
 @media screen and (min-width: 1280px) { 
