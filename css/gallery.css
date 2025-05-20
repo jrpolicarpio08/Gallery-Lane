@@ -283,6 +283,18 @@ body{ scroll-behavior: smooth;}
 }
 
 @media screen and (min-width: 1440px) { 
+
+    .spotlight-container { width: 35rem; }
+
+    .latest-photo-container { 
+        height: 30rem;
+        width: 60rem;
+    }
+
+    .latest-photo-name { 
+        margin-top: -0.5rem;
+    }
+
     .photo-h-extender{ margin-top: 9.9%; }
 
     .game-title-icon{ height: 4rem; }
@@ -291,16 +303,47 @@ body{ scroll-behavior: smooth;}
 
     .game-img-date,
     .game-img-title{ font-size: 2.5rem; }
+
 }
 
 @media screen and (min-width: 1536px) { 
+
     .photo-h-extender{ margin-top: 9.3%; }
 
     .game-img-date,
     .game-img-title{ font-size: 3rem; }
+
+    .latest-photo-container { 
+        height: 30rem;
+        width: 65rem;
+    }
+
+    .latest-photo-name { 
+        margin-top: 3rem;
+        font-size: 2rem;
+        line-height: 3.4rem;
+    }
+
+    .latest-photo-date { 
+        font-size: 1rem; 
+        margin-left: 0.2rem;
+    }
 }
 
 @media screen and (min-width: 1920px) { 
+
+    .spotlight-container { width: 45rem; }
+
+    .latest-photo-container { 
+        height: 30rem;
+        width: 75rem;
+    }
+
+    .latest-photo-date { 
+        font-size: 1.2rem; 
+        margin-left: 0.2rem;
+    }
+
     .photo-h-extender{ margin-top: 13.8%; }
 
     .photo-h-extender-main{
@@ -349,6 +392,33 @@ body{ scroll-behavior: smooth;}
 }
 
 @media screen and (min-width: 2560px) { 
+
+    .spotlight-container { width: 60rem; }
+
+    .latest-photo-container { 
+        height: 30rem;
+        width: 100rem;
+    }
+
+    .latest-photo-name { 
+        margin-top: -1rem;
+        margin-left: 1rem;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+    }
+
+    .latest-photo-date { 
+        font-size: 2.5rem; 
+        margin-left: 1.2rem;
+    }
+
+    .photo-h-extender{ margin-top: 13.8%; }
+
+    .photo-h-extender-main{
+        height: 20px;
+        width: 6.5rem;
+    }
+
     .photo-h-extender{ margin-top: 8.6%; }
 
     .photo-h-extender-main{
