@@ -67,30 +67,57 @@
           <div class="carousel-inner">
 
             <!-- home screen -->
-            <div class="carousel-item p-5 active">
-              <div class="main-box h-[50%] md:h-[50%] w-100 bg-danger mt-[1rem] flex justify-start items-center text-white animate__animated animate__fadeInDownBig animate__delay-0.5s">
-                <div class="px-[1rem] md:px-[3rem] md:mt-[-1.5rem]">
-                  <div class="mb-[0.5rem] font-semibold text-[2rem] md:text-[5rem] md:leading-25">Gallery Lane</div>
-                  <div class="text-[1rem] mx-[1rem] md:pt-1 md:mx-12 pl-3 pb-1.5 border-l-4 md:leading-9 md:text-[2rem]">Collection Of Frozen Time <br> Virtual Photography</div>
-                  <div class="mt-[1rem] md:mt-4 md:pl-3">
-                    <inpu type="button" class="btn border-2 text-white w-10/10 md:w-4/10 main-box-btn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"><span class="font-bold">Explore</span></inpu>
+            <div class="carousel-item py-5 px-3 md:p-5 active">
+              <div class="w-[100%] h-[100%] mt-[1rem] text-white flex flex-col md:flex-row">
+                <div class="h-[50%] md:h-[100%] w-[100%]">
+                  <div class="main-box bg-primary h-[100%] md:h-[50%] w-[100%] flex justify-start items-center px-[1rem] md:px-[3rem] animate__animated animate__fadeInDownBig animate__delay-0.5s">
+                    <div class="main-box-container">
+                      <div class="mb-[0.5rem] font-semibold text-[2rem] md:text-[5rem] md:leading-25">Gallery Lane</div>
+                      <div class="text-[1rem] mx-[1rem] pl-3 pb-[0.5rem] pt-[0.5rem] border-l-4 leading-5 md:mx-12 md:pt-1 md:leading-9 md:text-[2rem]">Collection Of Frozen Time <br> Virtual Photography</div>
+                      <div class="mt-[1rem] md:mt-4 md:pl-3">
+                        <input type="button" class="btn border-2 text-white w-[100%] md:w-4/10 main-box-btn" value="Explore" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"></input>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="flex flex-col md:flex-row h-[50%] mt-3">
-                <div class="h-[100%] w-[100%] md:w-[75%] bg-success text-white text-end flex justify-end items-center feature-box animate__animated animate__fadeInLeftBig animate__delay-1s">
-                  <div class="px-[1rem] md:px-[3rem] mt-[-1.5rem]">
-                    <div class="font-semibold text-[2rem] md:text-[5rem] md:leading-25 mb-[0.5rem]">Updates</div>
-                    <div class="text-[1rem] mx-[1rem] pr-3 pb-[0.5rem] md:pt-[0.5rem] md:pt-1 md:mx-12 md:pb-[1rem] border-r-4 md:leading-9 md:text-[2rem]">Latest Exploration</div>
-                    <div class="mt-[1rem] md:mt-4">
-                      <button type="button" class="btn border-2 text-white w-10/10 md:w-5/10 latest-box-btn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"><span class="font-bold">View</span></button>
+                  <div class="h-[100%] md:h-[50%] w-[100%] mt-[0.8rem] flex flex-col md:flex-row justify-center items-center">
+                    <div class="h-[100%] w-[100%] md:w-[75%] bg-warning flex justify-end items-center px-[1rem] md:px-[3rem] animate__animated animate__fadeInLeftBig animate__delay-1s">
+                      <div class="text-end latest-box-container mt-[-1rem] md:mt-[0rem]">
+                        <div class="font-semibold text-[2rem] md:text-[5rem] md:leading-25 mb-[0.5rem]">Updates</div>
+                        <div class="text-[1rem] mx-[1rem] pr-3 pb-[0.5rem] md:pt-[0.5rem] md:pt-1 md:mx-12 md:pb-[1rem] border-r-4 md:leading-9 md:text-[2rem]">Latest Exploration</div>
+                        <div class="mt-[1rem] md:mt-4">
+                          <input type="button" class="btn border-2 text-white w-[100%] md:w-5/10 latest-box-btn" value="View" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"></input>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="h-[100%] w-[100%] md:w-[25%] mt-[0.8rem] md:mt-[0rem] md:ml-[0.8rem] bg-success flex justify-center items-center about-box">
+                      <button class="btn border-0 about-box-btn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"><span class="font-bold xxl:text-[4rem]">About</span></button>
                     </div>
                   </div>
                 </div>
-                <div class="h-100 sm:h-[50%] sm:w-100 md:w-[25%] bg-warning md:ml-[1rem] flex justify-center items-center about-box">
-                  <button class="btn border-0 about-box-btn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"><span class="font-bold xxl:text-[4rem]">About</span></button>
+              </div>
+              <!-- <div class="main-box h-[50%] md:h-[50%] w-[100%] bg-danger mt-[1rem] flex justify-start items-center text-white animate__animated animate__fadeInDownBig animate__delay-0.5s">
+                <div class="px-[1rem] md:px-[3rem] md:mt-[-1.5rem] bg-primary">
+                  <div class="mb-[0.5rem] font-semibold text-[2rem] md:text-[5rem] md:leading-25">Gallery Lane</div>
+                  <div class="text-[1rem] mx-[1rem] md:pt-1 md:mx-12 pl-3 pb-1.5 border-l-4 md:leading-9 md:text-[2rem]">Collection Of Frozen Time <br> Virtual Photography</div>
+                  <div class="mt-[1rem] md:mt-4 md:pl-3">
+                    <input type="button" class="btn border-2 text-white w-10/10 md:w-4/10 main-box-btn" value="Explore" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"></input>
+                  </div>
                 </div>
               </div>
+              <div class="h-[50%] flex flex-col md:flex-row w-[100%] mt-3">
+                <div class="h-[100%] w-[100%] md:w-[75%] bg-success text-white text-end flex justify-end items-center feature-box animate__animated animate__fadeInLeftBig animate__delay-1s">
+                  <div class="px-[1rem] md:px-[3rem] bg-primary">
+                    <div class="font-semibold text-[2rem] md:text-[5rem] md:leading-25 mb-[0.5rem]">Updates</div>
+                    <div class="text-[1rem] mx-[1rem] pr-3 pb-[0.5rem] md:pt-[0.5rem] md:pt-1 md:mx-12 md:pb-[1rem] border-r-4 md:leading-9 md:text-[2rem]">Latest Exploration</div>
+                    <div class="mt-[1rem] md:mt-4">
+                      <input type="button" class="btn border-2 text-white w-10/10 md:w-5/10 latest-box-btn" value="Explore" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"></input>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-100 w-[100%] md:w-[25%] bg-warning md:ml-[1rem] flex justify-center items-center about-box">
+                  <button class="btn border-0 about-box-btn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"><span class="font-bold xxl:text-[4rem]">About</span></button>
+                </div>
+              </div> -->
             </div>
             <!-- home screen -->
 
@@ -105,7 +132,7 @@
                     <img src="./assets/images/slmobile.png">
                   </div>
                 </div>
-                <div class="latest-photo-container md:h-[20rem] md:w-[50rem] 2xl:h-[40rem] 2xl:w-[100rem] px-2 ">
+                <div class="latest-photo-container md:h-[20rem] md:w-[55rem] 2xl:h-[40rem] 2xl:w-[100rem] px-2 ">
                   <div class="border-10 border-white flex justify-center items-center">
                     <input type="image" src="./assets/images/latest.png" class="w-100" data-bs-toggle="modal" data-bs-target="#latestPhotoModal" type="image" src="./assets/images/latest.png"> 
                   </div>

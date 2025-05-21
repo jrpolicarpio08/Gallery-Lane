@@ -47,8 +47,13 @@ body{ scroll-behavior: smooth;}
     background-size: cover;
 }
 
+
+
 .latest-box-btn,
-.main-box-btn{ border: solid white; } 
+.main-box-btn{ 
+    border: solid white; 
+    font-weight: bold;
+} 
 
 .latest-box-btn:hover,
 .main-box-btn:hover{
@@ -187,6 +192,10 @@ body{ scroll-behavior: smooth;}
         text-align: center;
         z-index: 100;
     }
+
+    .latest-box-container,
+    .main-box-container { width: 100%; }
+
     .about-box{ margin-top: 1rem; }
 
     .abt-page{ padding: 0%; }
