@@ -484,4 +484,39 @@ body{ scroll-behavior: smooth;}
         font-size: 3rem;
     }
 }   
-  
+
+@media screen and (min-width: 3440px) { 
+
+    .photo-h-extender{ margin-top: 4.74%; }
+
+    .photo-h-extender-main{ height: 2.04rem; }
+
+    .photo-lettering{ 
+        font-size: 13rem;
+        padding-left: 7rem;
+        margin-top: -21rem;
+    }
+
+    .photo-lettering-to{ line-height: 20rem; }
+
+    .photo-lettering-ho{ line-height: 10rem; }
+
+    .photo-lettering-p{ line-height: 4rem; }
+
+    .collection-title { 
+        font-size: 4.5rem; 
+        margin-bottom: 1.5rem;
+    }
+
+    .collection-divider { 
+        height: 0.5rem;
+        width: 14.5rem;
+        margin-bottom: 0.5rem;
+     }
+
+    .collection-p p{
+        font-size: 2rem;
+        line-height: 2rem;
+     }
+
+}

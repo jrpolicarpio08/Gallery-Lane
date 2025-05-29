@@ -437,7 +437,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let activeSection = null;
     let activeButton = null;
 
-    // 🔥 Automatically detect buttons and sections
+    // Automatically detect buttons and sections
     document.querySelectorAll("[id^='gamebtn']").forEach((btn) => {
         const btnId = btn.id;
         const sectionId = btnId.replace("gamebtn", "game"); // Example: gamebtn1 -> game1
@@ -493,7 +493,7 @@ document.addEventListener("DOMContentLoaded", function () {
         activeSection = targetSection;
     }
 
-    // 🔥 Auto-show the section with "active" button on page load
+    // Auto-show the section with "active" button on page load
     const defaultButton = Object.values(buttons).find((btn) => btn.classList.contains("active"));
 
     if (defaultButton) {
@@ -502,7 +502,7 @@ document.addEventListener("DOMContentLoaded", function () {
         activeButton.querySelector("img").style.opacity = "0.5"; // Ensure the default button's image is faded
     }
 
-    // 🔥 Attach event listeners to all buttons
+    // Attach event listeners to all buttons
     Object.keys(buttons).forEach((key) => {
         buttons[key].addEventListener("click", () => toggleSection(key));
     });

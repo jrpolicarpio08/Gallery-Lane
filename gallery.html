@@ -23,7 +23,7 @@
             <img class="" src="./assets/icons/gallery-lane-icon.svg" width="60" height="60">
           </div>
           <div class="carousel-indicators carousel-nav">
-            <button class="d-none d-lg-block active" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0">
+            <button class="d-none d-lg-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0">
               <span class="d-none d-sm-block font-bold">Home</span>
               <span class="d-sm-block d-md-none d-lg-none">
                 <i class="fa-solid fa-house"></i>
@@ -54,7 +54,7 @@
                 <i class="fa-solid fa-house"></i>
               </span>
             </button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5">
+            <button type="button" class="active" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5">
               <span class="d-none d-sm-block font-bold">Contact</span>
               <span class="d-sm-block d-md-none d-lg-none">
                 <i class="fa-solid fa-house"></i>
@@ -67,7 +67,7 @@
           <div class="carousel-inner">
 
             <!-- home screen -->
-            <div class="carousel-item py-5 px-3 md:p-5 active">
+            <div class="carousel-item py-5 px-3 md:p-5">
               <div class="w-[100%] h-[100%] mt-[1rem] text-white flex flex-col md:flex-row">
                 <div class="h-[50%] md:h-[100%] w-[100%]">
                   <div class="main-box bg-primary h-[100%] md:h-[50%] w-[100%] flex justify-start items-center px-[1rem] md:px-[3rem] animate__animated animate__fadeInDownBig animate__delay-0.5s">
@@ -95,29 +95,6 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="main-box h-[50%] md:h-[50%] w-[100%] bg-danger mt-[1rem] flex justify-start items-center text-white animate__animated animate__fadeInDownBig animate__delay-0.5s">
-                <div class="px-[1rem] md:px-[3rem] md:mt-[-1.5rem] bg-primary">
-                  <div class="mb-[0.5rem] font-semibold text-[2rem] md:text-[5rem] md:leading-25">Gallery Lane</div>
-                  <div class="text-[1rem] mx-[1rem] md:pt-1 md:mx-12 pl-3 pb-1.5 border-l-4 md:leading-9 md:text-[2rem]">Collection Of Frozen Time <br> Virtual Photography</div>
-                  <div class="mt-[1rem] md:mt-4 md:pl-3">
-                    <input type="button" class="btn border-2 text-white w-10/10 md:w-4/10 main-box-btn" value="Explore" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"></input>
-                  </div>
-                </div>
-              </div>
-              <div class="h-[50%] flex flex-col md:flex-row w-[100%] mt-3">
-                <div class="h-[100%] w-[100%] md:w-[75%] bg-success text-white text-end flex justify-end items-center feature-box animate__animated animate__fadeInLeftBig animate__delay-1s">
-                  <div class="px-[1rem] md:px-[3rem] bg-primary">
-                    <div class="font-semibold text-[2rem] md:text-[5rem] md:leading-25 mb-[0.5rem]">Updates</div>
-                    <div class="text-[1rem] mx-[1rem] pr-3 pb-[0.5rem] md:pt-[0.5rem] md:pt-1 md:mx-12 md:pb-[1rem] border-r-4 md:leading-9 md:text-[2rem]">Latest Exploration</div>
-                    <div class="mt-[1rem] md:mt-4">
-                      <input type="button" class="btn border-2 text-white w-10/10 md:w-5/10 latest-box-btn" value="Explore" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2"></input>
-                    </div>
-                  </div>
-                </div>
-                <div class="h-100 w-[100%] md:w-[25%] bg-warning md:ml-[1rem] flex justify-center items-center about-box">
-                  <button class="btn border-0 about-box-btn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"><span class="font-bold xxl:text-[4rem]">About</span></button>
-                </div>
-              </div> -->
             </div>
             <!-- home screen -->
 
@@ -134,7 +111,7 @@
                 </div>
                 <div class="latest-photo-container md:h-[20rem] md:w-[55rem] 2xl:h-[40rem] 2xl:w-[100rem] px-2 ">
                   <div class="border-10 border-white flex justify-center items-center">
-                    <input type="image" src="./assets/images/latest.png" class="w-100" data-bs-toggle="modal" data-bs-target="#latestPhotoModal" type="image" src="./assets/images/latest.png"> 
+                    <input type="image" src="./assets/images/latest.png" class="w-100" data-bs-toggle="modal" data-bs-target="#latestPhotoModal"> 
                   </div>
                   <div class="relative pointer-events-none text-white">
                     <div class="absolute mt-[-3rem] ml-[1rem] md:ml-[2rem] md:mt-[-5.5rem] 2xl:mt-[-10rem] latest-photo-title">
@@ -180,7 +157,7 @@
                           </div>
                         </div>
                         <div class="absolute left-12 mt-[10.4%] photo-h-extender animate__animated animate__fadeInLeft animate__delay-1s">
-                          <div class="photo-h-extender-main bg-[black] h-[14px] w-[4.6rem] z-5"></div>
+                          <div class="photo-h-extender-main bg-[black] h-[14px] w-[4.6rem]  z-5"></div>
                         </div>
                       </div>
                     </div>
@@ -222,7 +199,7 @@
                         </div>
                       </div>
                       <div class="game-img-container h-[85%] flex justify-start items-center animate__animated animate__fadeIn animate__delay-1s">
-                        <input type="image" src="./assets/images/latest.png" class="w-100 h-100" data-bs-toggle="modal" data-bs-target="#game1Modal">
+                        <input type="image" src="./assets/images/latest.png" class="w-100 h-100" data-bs-toggle="modal" data-bs-target="#latestPhotoModal">
                       </div>
                     </div>
 
@@ -692,8 +669,175 @@
             </div>
             <!-- about screen -->
 
-            <div class="carousel-item">
-              test3
+            <div class="carousel-item active">
+              <div class="w-[100%] h-[100%] flex flex-col md:flex-row">
+                  <div class="h-[100%] w-[100%] md:w-[50%] py-[3rem] px-[2rem] md:px-[4rem] border-b-[0.3rem] md:border-b-[0rem] md:border-r-[0.3rem] flex justify-center items-center md:items-start">
+                    <div>
+                      <div class="text-[3rem] leading-[2.5rem] mt-[2rem] md:mt-[1rem] md:text-[5rem] md:leading-[5rem] text-uppercase font-semibold ">Message</div>
+                      <div class="text-[3rem] leading-[3rem] md:text-[5rem] md:leading-[5rem] text-uppercase font-semibold ">The Author</div>
+                      <div class="md:text-[1.5rem] font-semibold italic">request, suggestion and collaboration </div>
+                      <div>
+                        <form>
+                          <div class="mt-[1rem] mb-[1rem]">
+                            <input type="email" class="form-control" id="exampleInputEmail1" value="E-mail" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          </div>                          
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Choose a subject</option>
+                            <option value="1">Request</option>
+                            <option value="2">Suggestions</option>
+                            <option value="3">Collaboration</option>
+                          </select>
+                          <div class="mb-[1rem] mt-[0.5rem]">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message ( required )</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary w-[100%]">Submit</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                <div class="w-[100%] md:w-[50%] h-[15%] md:h-[100%]">
+                  <div class="w-[100%] h-[75%] d-none d-lg-block border-b-[0.3rem]">
+                    <div class="w-[100%] h-[100%] px-5 flex justify-center items-center ">
+                      <div>
+                        <div class="text-[5rem] font-semibold">Contact me</div>
+                        <p class="text-[1.2rem] leading-[1.2rem]"> If you have any personal inquiries or would like to share tips and suggestions regarding photography collaborations, please feel free to reach out to me. I am particularly interested in exploring opportunities within specific games, and I welcome any insights or ideas you may have. Your input could be invaluable in enhancing our collaborative efforts and ensuring that we create compelling visual narratives together. </p>
+                        <p class="text-[1.2rem] leading-[1.2rem]"> Additionally, I encourage open communication about any aspects of photography that you find intriguing or challenging. Whether you are seeking advice on techniques, equipment, or creative concepts, I am here to assist you. Engaging in discussions about our shared interests can lead to fruitful collaborations and innovative projects that resonate with our audiences. I look forward to hearing from you and exploring the possibilities that lie ahead. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-[100%] h-[100%] md:h-[25%] flex ">
+                    <div class="w-[50%] md:w-[30%] border-r-[0.3rem] h-[100%] flex justify-center items-center">
+                      <div class="">
+                        <div class="mb-[1rem] text-center">
+                          <button onclick="location.href='https://facebook.com/Roy.010800'" type="button">
+                            <i class="fa-brands fa-facebook text-[2rem]"></i>
+                          </button>
+
+                          <button onclick="location.href='https://x.com/ROYJOB08'" type="button">
+                            <i class="fa-brands fa-twitter text-[2rem] ml-[0.2rem]"></i>
+                          </button>
+                        </div>
+                        <div>
+                          <button onclick="location.href='https://instagram.com/royjob08/'" type="button">
+                            <i class="fa-brands fa-instagram text-[2rem]"></i>
+                          </button>
+                          <button onclick="location.href='https://github.com/jrpolicarpio08'" type="button">
+                            <i class="fa-brands fa-github-alt text-[2rem] ml-[0.5rem]"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="w-[40%] h-[100%] d-none d-sm-block">
+                      <div class="w-[100% h-[100%] flex p-[1.5rem] justify-center items-start">
+                        <div>
+                          <div class="text-[1.8rem] font-semibold">
+                            <div class="leading-[1.5rem]">Did you enjoy</div>
+                            <div>Your visit here?</div>
+                          </div>
+                          <div>
+                            <div>
+                              <p class="leading-[1.1rem]">Make sure to bookmark or visit this website more often in order to not miss any update.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="w-[50%] md:w-[30%] md:border-l-[0.3rem] h-[100%] flex justify-center items-center px-[1.1rem]">
+                      <div class="text-[1.4rem] md:text-[1.5rem] font-semibold italic text-uppercase">
+                        <div class="leading-[1.6rem]">Thank You <br> For Visiting</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- <div class="md:border-r-[0.3rem] h-[50%] w-[100%] md:w-[50%] md:h-[100%] bg-danger">
+                  <div class=" h-[100%] w-[100%] py-[3rem] px-[2rem] md:px-[4rem] flex justify-center items-start">
+                    <div>
+                      <div class="text-[3rem] leading-[2.5rem] mt-[2rem] md:mt-[1rem] md:text-[5rem] md:leading-[5rem] text-uppercase font-semibold ">Message</div>
+                      <div class="text-[3rem] leading-[3rem] md:text-[5rem] md:leading-[5rem] text-uppercase font-semibold ">The Author</div>
+                      <div class="md:text-[1.5rem] font-semibold italic">request, suggestion and collaboration </div>
+                      <div>
+                        <form>
+                          <div class="mt-[1rem] mb-[1rem]">
+                            <input type="email" class="form-control" id="exampleInputEmail1" value="E-mail" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          </div>                          
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Choose a subject</option>
+                            <option value="1">Request</option>
+                            <option value="2">Suggestions</option>
+                            <option value="3">Collaboration</option>
+                          </select>
+                          <div class="mb-[1rem] mt-[0.5rem]">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message ( required )</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary w-[100%]">Submit</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="h-[25%] md:w-[50%] md:h-[100%]">
+                  <div class=" md:h-[75%] w-[100%] border-b-[0.3rem] flex justify-center items-end d-none d-lg-block">
+                    <div class="w-[100%] h-[100%] px-5 bg-danger flex justify-center items-center">
+                      <div>
+                        <div class="text-[5rem] font-semibold">Contact me</div>
+                        <p class="text-[1.2rem] leading-[1.2rem]"> If you have any personal inquiries or would like to share tips and suggestions regarding photography collaborations, please feel free to reach out to me. I am particularly interested in exploring opportunities within specific games, and I welcome any insights or ideas you may have. Your input could be invaluable in enhancing our collaborative efforts and ensuring that we create compelling visual narratives together. </p>
+                        <p class="text-[1.2rem] leading-[1.2rem]"> Additionally, I encourage open communication about any aspects of photography that you find intriguing or challenging. Whether you are seeking advice on techniques, equipment, or creative concepts, I am here to assist you. Engaging in discussions about our shared interests can lead to fruitful collaborations and innovative projects that resonate with our audiences. I look forward to hearing from you and exploring the possibilities that lie ahead. </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="h-[100%] md:h-[25%] w-[100%] flex bg-warning">
+                    <div class="w-[50%] md:w-[30%] border-r-[0.3rem] h-[100%] flex justify-center items-center">
+                      <div class="">
+                        <div class="mb-[1rem] text-center">
+                          <button onclick="location.href='https://facebook.com/Roy.010800'" type="button">
+                            <i class="fa-brands fa-facebook text-[2rem]"></i>
+                          </button>
+
+                          <button onclick="location.href='https://x.com/ROYJOB08'" type="button">
+                            <i class="fa-brands fa-twitter text-[2rem] ml-[0.2rem]"></i>
+                          </button>
+                        </div>
+                        <div>
+                          <button onclick="location.href='https://instagram.com/royjob08/'" type="button">
+                            <i class="fa-brands fa-instagram text-[2rem]"></i>
+                          </button>
+                          <button onclick="location.href='https://github.com/jrpolicarpio08'" type="button">
+                            <i class="fa-brands fa-github-alt text-[2rem] ml-[0.5rem]"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-[40%] h-[100%] d-none d-sm-block">
+                      <div class="w-[100% h-[100%] flex p-[1.5rem] justify-center items-start">
+                        <div>
+                          <div class="text-[1.8rem] font-semibold">
+                            <div class="leading-[1.5rem]">Did you enjoy</div>
+                            <div>Your visit here?</div>
+                          </div>
+                          <div>
+                            <div>
+                              <p class="leading-[1.1rem]">Make sure to bookmark or visit this website more often in order to not miss any update.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-[50%] md:w-[30%] md:border-l-[0.3rem] h-[100%] flex justify-center items-center px-[1.1rem]">
+                      <div class="text-[1.4rem] md:text-[1.5rem] font-semibold italic text-uppercase">
+                        <div class="leading-[1.6rem]">Thank You <br> For Visiting</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
             </div>
 
             
