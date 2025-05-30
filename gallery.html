@@ -23,19 +23,19 @@
             <img class="" src="./assets/icons/gallery-lane-icon.svg" width="60" height="60">
           </div>
           <div class="carousel-indicators carousel-nav">
-            <button class="d-none d-lg-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0">
+            <button class="d-none d-lg-block active" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true">
               <span class="d-none d-sm-block font-bold">Home</span>
               <span class="d-sm-block d-md-none d-lg-none">
                 <i class="fa-solid fa-house"></i>
               </span>
             </button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true">
               <span class="d-none d-sm-block font-bold">Updates</span>
               <span class="d-sm-block d-md-none d-lg-none">
                 <i class="fa-solid fa-house"></i>
               </span>
             </button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true">
               <span class="d-none d-sm-block font-bold">Gallery</span>
               <span class="d-sm-block d-md-none d-lg-none">
                 <i class="fa-solid fa-house"></i>
@@ -54,7 +54,7 @@
                 <i class="fa-solid fa-house"></i>
               </span>
             </button>
-            <button type="button" class="active" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5">
               <span class="d-none d-sm-block font-bold">Contact</span>
               <span class="d-sm-block d-md-none d-lg-none">
                 <i class="fa-solid fa-house"></i>
@@ -67,7 +67,7 @@
           <div class="carousel-inner">
 
             <!-- home screen -->
-            <div class="carousel-item py-5 px-3 md:p-5">
+            <div class="carousel-item active py-5 px-3 md:p-5">
               <div class="w-[100%] h-[100%] mt-[1rem] text-white flex flex-col md:flex-row">
                 <div class="h-[50%] md:h-[100%] w-[100%]">
                   <div class="main-box bg-primary h-[100%] md:h-[50%] w-[100%] flex justify-start items-center px-[1rem] md:px-[3rem] animate__animated animate__fadeInDownBig animate__delay-0.5s">
@@ -655,7 +655,7 @@
             <!-- gallery screen -->
 
             <!-- about screen -->
-            <div class="carousel-item abt-page">
+            <div class="carousel-item p-5">
               <div class="flex flex-col md:flex-row h-100">
                 <div class="abt-img w-full md:w-1/2 md:p-4 md:mt-2 d-none d-sm-block gallery animate__animated animate__fadeInDownBig animate__delay-0.8s"></div>
                 <div class="w-full h-100 -p-1 md:w-1/2 md:ml-4 md:p-4 animate__animated animate__fadeInUpBig animate__delay-0.8s abt-msg">
@@ -669,34 +669,35 @@
             </div>
             <!-- about screen -->
 
-            <div class="carousel-item active">
+            <!-- contact screen -->
+            <div class="carousel-item">
               <div class="w-[100%] h-[100%] flex flex-col md:flex-row">
-                  <div class="h-[100%] w-[100%] md:w-[50%] py-[3rem] px-[2rem] md:px-[4rem] border-b-[0.3rem] md:border-b-[0rem] md:border-r-[0.3rem] flex justify-center items-center md:items-start">
+                <div class="h-[100%] w-[100%] md:w-[50%] py-[3rem] px-[2rem] md:px-[4rem] border-b-[0.3rem] md:border-b-[0rem] md:border-r-[0.3rem] flex justify-center items-center md:items-start">
+                  <div>
+                    <div class="text-[3rem] leading-[2.5rem] mt-[2rem] md:mt-[1rem] md:text-[5rem] md:leading-[5rem] text-uppercase font-semibold ">Message</div>
+                    <div class="text-[3rem] leading-[3rem] md:text-[5rem] md:leading-[5rem] text-uppercase font-semibold ">The Author</div>
+                    <div class="md:text-[1.5rem] font-semibold italic">request, suggestion and collaboration </div>
                     <div>
-                      <div class="text-[3rem] leading-[2.5rem] mt-[2rem] md:mt-[1rem] md:text-[5rem] md:leading-[5rem] text-uppercase font-semibold ">Message</div>
-                      <div class="text-[3rem] leading-[3rem] md:text-[5rem] md:leading-[5rem] text-uppercase font-semibold ">The Author</div>
-                      <div class="md:text-[1.5rem] font-semibold italic">request, suggestion and collaboration </div>
-                      <div>
-                        <form>
-                          <div class="mt-[1rem] mb-[1rem]">
-                            <input type="email" class="form-control" id="exampleInputEmail1" value="E-mail" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                          </div>                          
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Choose a subject</option>
-                            <option value="1">Request</option>
-                            <option value="2">Suggestions</option>
-                            <option value="3">Collaboration</option>
-                          </select>
-                          <div class="mb-[1rem] mt-[0.5rem]">
-                            <label for="exampleFormControlTextarea1" class="form-label">Message ( required )</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                          </div>
-                          <button type="submit" class="btn btn-primary w-[100%]">Submit</button>
-                        </form>
-                      </div>
+                      <form>
+                        <div class="mt-[1rem] mb-[1rem]">
+                          <input type="email" class="form-control" id="exampleInputEmail1" value="E-mail" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>                          
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Choose a subject</option>
+                          <option value="1">Request</option>
+                          <option value="2">Suggestions</option>
+                          <option value="3">Collaboration</option>
+                        </select>
+                        <div class="mb-[1rem] mt-[0.5rem]">
+                          <label for="exampleFormControlTextarea1" class="form-label">Message ( required )</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-[100%]">Submit</button>
+                      </form>
                     </div>
                   </div>
+                </div>
                 <div class="w-[100%] md:w-[50%] h-[15%] md:h-[100%]">
                   <div class="w-[100%] h-[75%] d-none d-lg-block border-b-[0.3rem]">
                     <div class="w-[100%] h-[100%] px-5 flex justify-center items-center ">
@@ -751,324 +752,237 @@
                         <div class="leading-[1.6rem]">Thank You <br> For Visiting</div>
                       </div>
                     </div>
-
                   </div>
                 </div>
-                <!-- <div class="md:border-r-[0.3rem] h-[50%] w-[100%] md:w-[50%] md:h-[100%] bg-danger">
-                  <div class=" h-[100%] w-[100%] py-[3rem] px-[2rem] md:px-[4rem] flex justify-center items-start">
-                    <div>
-                      <div class="text-[3rem] leading-[2.5rem] mt-[2rem] md:mt-[1rem] md:text-[5rem] md:leading-[5rem] text-uppercase font-semibold ">Message</div>
-                      <div class="text-[3rem] leading-[3rem] md:text-[5rem] md:leading-[5rem] text-uppercase font-semibold ">The Author</div>
-                      <div class="md:text-[1.5rem] font-semibold italic">request, suggestion and collaboration </div>
-                      <div>
-                        <form>
-                          <div class="mt-[1rem] mb-[1rem]">
-                            <input type="email" class="form-control" id="exampleInputEmail1" value="E-mail" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                          </div>                          
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Choose a subject</option>
-                            <option value="1">Request</option>
-                            <option value="2">Suggestions</option>
-                            <option value="3">Collaboration</option>
-                          </select>
-                          <div class="mb-[1rem] mt-[0.5rem]">
-                            <label for="exampleFormControlTextarea1" class="form-label">Message ( required )</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                          </div>
-                          <button type="submit" class="btn btn-primary w-[100%]">Submit</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="h-[25%] md:w-[50%] md:h-[100%]">
-                  <div class=" md:h-[75%] w-[100%] border-b-[0.3rem] flex justify-center items-end d-none d-lg-block">
-                    <div class="w-[100%] h-[100%] px-5 bg-danger flex justify-center items-center">
-                      <div>
-                        <div class="text-[5rem] font-semibold">Contact me</div>
-                        <p class="text-[1.2rem] leading-[1.2rem]"> If you have any personal inquiries or would like to share tips and suggestions regarding photography collaborations, please feel free to reach out to me. I am particularly interested in exploring opportunities within specific games, and I welcome any insights or ideas you may have. Your input could be invaluable in enhancing our collaborative efforts and ensuring that we create compelling visual narratives together. </p>
-                        <p class="text-[1.2rem] leading-[1.2rem]"> Additionally, I encourage open communication about any aspects of photography that you find intriguing or challenging. Whether you are seeking advice on techniques, equipment, or creative concepts, I am here to assist you. Engaging in discussions about our shared interests can lead to fruitful collaborations and innovative projects that resonate with our audiences. I look forward to hearing from you and exploring the possibilities that lie ahead. </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="h-[100%] md:h-[25%] w-[100%] flex bg-warning">
-                    <div class="w-[50%] md:w-[30%] border-r-[0.3rem] h-[100%] flex justify-center items-center">
-                      <div class="">
-                        <div class="mb-[1rem] text-center">
-                          <button onclick="location.href='https://facebook.com/Roy.010800'" type="button">
-                            <i class="fa-brands fa-facebook text-[2rem]"></i>
-                          </button>
-
-                          <button onclick="location.href='https://x.com/ROYJOB08'" type="button">
-                            <i class="fa-brands fa-twitter text-[2rem] ml-[0.2rem]"></i>
-                          </button>
-                        </div>
-                        <div>
-                          <button onclick="location.href='https://instagram.com/royjob08/'" type="button">
-                            <i class="fa-brands fa-instagram text-[2rem]"></i>
-                          </button>
-                          <button onclick="location.href='https://github.com/jrpolicarpio08'" type="button">
-                            <i class="fa-brands fa-github-alt text-[2rem] ml-[0.5rem]"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="w-[40%] h-[100%] d-none d-sm-block">
-                      <div class="w-[100% h-[100%] flex p-[1.5rem] justify-center items-start">
-                        <div>
-                          <div class="text-[1.8rem] font-semibold">
-                            <div class="leading-[1.5rem]">Did you enjoy</div>
-                            <div>Your visit here?</div>
-                          </div>
-                          <div>
-                            <div>
-                              <p class="leading-[1.1rem]">Make sure to bookmark or visit this website more often in order to not miss any update.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="w-[50%] md:w-[30%] md:border-l-[0.3rem] h-[100%] flex justify-center items-center px-[1.1rem]">
-                      <div class="text-[1.4rem] md:text-[1.5rem] font-semibold italic text-uppercase">
-                        <div class="leading-[1.6rem]">Thank You <br> For Visiting</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
             </div>
-
-            
-            <!-- modals section -->
-
-            <!-- modal latest section -->
-            <div class="modal fade" id="latestPhotoModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-              <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content" style="border-radius: 0px;">
-                  <div class="modal-body h-100 w-100">
-                    <div>
-                      <img src="./assets/images/latest.png" width="100%">   
-
-                      <div class="d-none d-sm-block" >                          
-                        <div data-section="latestphoto" data-section-index="1"  class="modal-photo-title animate__animated animate__fadeInRight md:px-4 text-white md:absolute md:bottom-6 md:leading-10 pointer-events-none">
-                          <div class="font-bold md:text-[1.9rem]">Alfa Romeo Stelvio</div>
-                          <div class="md:text-[1rem] font-semibold md:mx-[0.22rem] md:mt-[-0.6rem]"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
-                        </div> 
-                      </div>
-                      
-                      <div class="latest-modal-btn-group d-none d-sm-block z-10">
-                        <button class="btn modal-btn-title border-0" data-toggle-pair="latestphoto">
-                          <span class="md:text-[3rem] text-center">
-                            <i class="fa-solid fa-circle-info"></i>
-                          </span>
-                        </button>
-                      </div>
-
-                      <div class="h-100 w-100 mt-[1rem] flex bg-[black] text-white d-sm-block d-md-none d-lg-none">
-                        <div class="w-2/3">
-                          <div class="px-[1.5rem]">
-                            <div class="modal-photo-details-title md:text-[3.5rem] border-b-[0.2rem] md:w-[35rem] font-semibold md:mb-[1.8rem]">Alfa Romeo Stelvio</div>
-                            <div class="modal-photo-details-info md:leading-8 md:pl-[1rem] md:mb-[2rem] text-start">
-                              <div class="md:text-[1rem] md:leading-[1rem] h-[10rem] pr-[0.2rem] md:w-[41.5rem] md: overflow-y-scroll overflow-x-hidden">
-                                <div>
-                                  <p class="modal-photo-details-info-p">The Alfa Romeo Stelvio (Type 949) is a car produced by the Italian manufacturer Alfa Romeo since 2016. As a D-segment model it slots above the smaller Tonale model in the marque's SUV range. A compact crossover SUV, it was first revealed at the 2016 Los Angeles Auto Show, introduced by a 60" short film directed by Louis Sebastian Pane, and entered production at the Cassino Plant at the end of 2016. In 2018 it was Alfa Romeo's best-selling model, with roughly 43,000 sold that year.</p>
-                                </div>
-                                <div>
-                                  <p class="modal-photo-details-info-p2">The Stelvio uses the same Giorgio platform already used by the Giulia,but slightly modified and raised by 22 cm (8.7 in).The Stelvio also shares the same engines and most of the mechanics, including a carbon-fibre driveshaft. In addition, its track width has increased by 2.9 cm (1.1 in) in the rear and 5.4 cm (2.1 in) in the front. It has a boot capacity of 525 L (18.5 cu ft).The boot sill is aligned with the rear bumper and cargo does not need to be lifted over a lip when being removed. There are large vehicle blind spots behind the car's pillars.It has a 50/50 weight distribution and a drag coefficient of 0.32 (Cd).Euro NCAP classify it as a large off-road car.</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="pl-[1.5rem]">
-                            <div class="modal-photo-details-ainfo bg-[#ffff] w-[100%] md:h-[5rem] md:px-[1.7rem] md:pt-[0.5rem] text-dark text-start md:leading-6">
-                              <div class="md:text-[1.5rem] font-bold  uppercase">Additional Information</div>
-                              <div class="flex">
-                                <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
-                                  <span class="d-none d-lg-block">Resolution : 3440 X 1440</span> 
-                                  <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-desktop"></i> : 3440 X 1440</span>
-                                </div>
-                                <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
-                                  <span class="d-none d-lg-block">Settings : ULTRA</span> 
-                                  <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-sliders"></i> : ULTRA</span>
-                                </div>
-                                <div class="md:text-[1rem] font-semibold">
-                                  <span class="d-none d-lg-block">Render : 5K</span> 
-                                  <span class="d-sm-block d-md-none d-lg-none"><i class="fa-regular fa-image"></i> : 5K</span>
-                                </div>
-                              </div>
-                              <div class="flex md:-mt-[0.4rem]">
-                                <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
-                                  <span class="d-none d-lg-block">Game : GTA 5 FIVEM</span>
-                                  <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-gamepad"></i> : GTA 5 FIVEM</span>
-                                </div>
-                                <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
-                                  <span class="d-none d-lg-block">Server : FiveM SpeedLab WL</span>
-                                  <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-server"></i> : FiveM SpeedLab WL</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="w-1/3">
-                          <div class="absolute">
-                            <div class="modal-photo-credits-border relative border-l-[0.3rem] top-[1rem] h-[13rem] md:left-[-0.24rem]"></div>
-                          </div>
-                          <div class="modal-photo-credits mt-[1rem]">
-                            <div class="text-start md:pl-[2rem] md:pt-[2.3rem] md:leading-7">
-                              <div class="modal-photo-credits-author text-[1.3rem] mb-[1rem]">
-                                <div class="uppercase font-bold">Author</div>
-                                <div class="font-semibold">JRVP08</div>
-                              </div>
-                              <div class="modal-photo-credits-date text-[1.3rem] mb-[1rem]">
-                                <div class="uppercase font-bold">Date</div>
-                                <div class="font-semibold">03/11/2025</div>
-                              </div>
-                              <div class="modal-photo-credits-mods text-[1.3rem]">
-                                <div class="uppercase font-bold">Mods</div>
-                                <div class="font-semibold">
-                                  <div>QUANT V</div>
-                                  <div>SG PROJECT</div>
-                                  <div>LA REVO</div>
-                                  <div>5Real</div>
-                                  <div>ENB</div>
-                                  <div>RESHADE</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="d-none d-sm-block" >
-                        <div data-section="latestphoto" data-section-index="2" class="modal-photo-details hidden animate__animated duration-300 md:w-[69.1rem] md:h-[29rem] md:px-[1rem] md:pt-[1rem] text-white md:absolute top-4 overflow-x-hidden">
-                          <div class="relative flex justify-center text-center">
-                            
-                            <div class="w-2/3">
-                              <div class="px-[1.5rem]">
-                                <div class="modal-photo-details-title md:text-[3.5rem] border-b-[0.2rem] md:w-[35rem] font-semibold md:mb-[1.8rem]">Alfa Romeo Stelvio</div>
-                                <div class="modal-photo-details-info md:leading-8 md:pl-[1rem] md:mb-[2rem] text-start">
-                                  <div class="md:text-[1rem] md:leading-[1rem] h-[10rem] pr-[0.2rem] md:w-[41.5rem] md: overflow-y-scroll overflow-x-hidden">
-                                    <div>
-                                      <p class="modal-photo-details-info-p">The Alfa Romeo Stelvio (Type 949) is a car produced by the Italian manufacturer Alfa Romeo since 2016. As a D-segment model it slots above the smaller Tonale model in the marque's SUV range. A compact crossover SUV, it was first revealed at the 2016 Los Angeles Auto Show, introduced by a 60" short film directed by Louis Sebastian Pane, and entered production at the Cassino Plant at the end of 2016. In 2018 it was Alfa Romeo's best-selling model, with roughly 43,000 sold that year.</p>
-                                    </div>
-                                    <div>
-                                      <p class="modal-photo-details-info-p2">The Stelvio uses the same Giorgio platform already used by the Giulia,but slightly modified and raised by 22 cm (8.7 in).The Stelvio also shares the same engines and most of the mechanics, including a carbon-fibre driveshaft. In addition, its track width has increased by 2.9 cm (1.1 in) in the rear and 5.4 cm (2.1 in) in the front. It has a boot capacity of 525 L (18.5 cu ft).The boot sill is aligned with the rear bumper and cargo does not need to be lifted over a lip when being removed. There are large vehicle blind spots behind the car's pillars.It has a 50/50 weight distribution and a drag coefficient of 0.32 (Cd).Euro NCAP classify it as a large off-road car.</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="pl-[1.5rem]">
-                                <div class="modal-photo-details-ainfo bg-[#ffff] w-[100%] md:h-[5rem] md:px-[1.7rem] md:pt-[0.5rem] text-dark text-start md:leading-6">
-                                  <div class="md:text-[1.5rem] font-bold  uppercase">Additional Information</div>
-                                  <div class="flex">
-                                    <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
-                                      <span class="d-none d-lg-block">Resolution : 3440 X 1440</span> 
-                                      <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-desktop"></i> : 3440 X 1440</span>
-                                    </div>
-                                    <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
-                                      <span class="d-none d-lg-block">Settings : ULTRA</span> 
-                                      <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-sliders"></i> : ULTRA</span>
-                                    </div>
-                                    <div class="md:text-[1rem] font-semibold">
-                                      <span class="d-none d-lg-block">Render : 5K</span> 
-                                      <span class="d-sm-block d-md-none d-lg-none"><i class="fa-regular fa-image"></i> : 5K</span>
-                                    </div>
-                                  </div>
-                                  <div class="flex md:-mt-[0.4rem]">
-                                    <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
-                                      <span class="d-none d-lg-block">Game : GTA 5 FIVEM</span>
-                                      <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-gamepad"></i> : GTA 5 FIVEM</span>
-                                    </div>
-                                    <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
-                                      <span class="d-none d-lg-block">Server : FiveM SpeedLab WL</span>
-                                      <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-server"></i> : FiveM SpeedLab WL</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="w-1/3">
-                              <div class="absolute">
-                                <div class="modal-photo-credits-border relative border-l-[0.3rem] top-[1rem] h-[13rem] md:left-[-0.24rem]"></div>
-                              </div>
-                              <div class="modal-photo-credits mt-[1rem]">
-                                <div class="text-start md:pl-[2rem] md:pt-[2.3rem] md:leading-7">
-                                  <div class="modal-photo-credits-author text-[1.3rem] mb-[1rem]">
-                                    <div class="uppercase font-bold">Author</div>
-                                    <div class="font-semibold">JRVP08</div>
-                                  </div>
-                                  <div class="modal-photo-credits-date text-[1.3rem] mb-[1rem]">
-                                    <div class="uppercase font-bold">Date</div>
-                                    <div class="font-semibold">03/11/2025</div>
-                                  </div>
-                                  <div class="modal-photo-credits-mods text-[1.3rem]">
-                                    <div class="uppercase font-bold">Mods</div>
-                                    <div class="font-semibold">
-                                      <div>QUANT V</div>
-                                      <div>SG PROJECT</div>
-                                      <div>LA REVO</div>
-                                      <div>5Real</div>
-                                      <div>ENB</div>
-                                      <div>RESHADE</div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- modal latest section -->
-
-            <!-- gallery modal game1 -->
-            <div class="modal fade" id="game1Modal" tabindex="-1" aria-hidden="true">
-              <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-                <div class="modal-content" style="border-radius: 0px;">
-                  <div class="modal-body h-[100] flex justify-center items-center p-0">
-
-                    <div class="h-100 w-[50%] bg-danger p-[1rem]">
-                      <div class="text-[3rem] font-semibold leading-13">Welcome <br> To the FiveM <br> Photo collection</div>
-                      <div class="mt-[0.5rem] mb-[1rem] text-[1rem]">Collection of frozen time in the world of FiveM</div>
-                      <div class="text-[1rem] font-bold">Updates: </div>
-                      <div class="">
-                        <div class="">Toyota Supra - 01/01/2025</div>
-                        <div class="">Toyota Supra - 01/01/2025</div>
-                        <div class="">Toyota Supra - 01/01/2025</div>
-                        <div class="">Toyota Supra - 01/01/2025</div>
-                      </div>
-                    </div>
-
-                    <div class="h-100 w-100 bg-warning">
-                      test
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- gallery modal game1 -->
-
-            <!-- modals section -->
-
-
+            <!-- contact screen -->
+          
           </div>
           <!-- body -->
         </div>
-
       </div>
     </section>
+
+    <!-- modals section -->
+
+    <!-- modal latest section -->
+    <div class="modal fade" id="latestPhotoModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content" style="border-radius: 0px;">
+          <div class="modal-body h-100 w-100">
+            <div>
+              <img src="./assets/images/latest.png" width="100%">   
+
+              <div class="d-none d-sm-block" >                          
+                <div data-section="latestphoto" data-section-index="1"  class="modal-photo-title animate__animated animate__fadeInRight md:px-4 text-white md:absolute md:bottom-6 md:leading-10 pointer-events-none">
+                  <div class="font-bold md:text-[1.9rem]">Alfa Romeo Stelvio</div>
+                  <div class="md:text-[1rem] font-semibold md:mx-[0.22rem] md:mt-[-0.6rem]"><i class="fa-solid fa-calendar-days"></i> : 03/10/2025</div>
+                </div> 
+              </div>
+              
+              <div class="latest-modal-btn-group d-none d-sm-block z-10">
+                <button class="btn modal-btn-title border-0" data-toggle-pair="latestphoto">
+                  <span class="md:text-[3rem] text-center">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </span>
+                </button>
+              </div>
+
+              <div class="h-100 w-100 mt-[1rem] flex bg-[black] text-white d-sm-block d-md-none d-lg-none">
+                <div class="w-2/3">
+                  <div class="px-[1.5rem]">
+                    <div class="modal-photo-details-title md:text-[3.5rem] border-b-[0.2rem] md:w-[35rem] font-semibold md:mb-[1.8rem]">Alfa Romeo Stelvio</div>
+                    <div class="modal-photo-details-info md:leading-8 md:pl-[1rem] md:mb-[2rem] text-start">
+                      <div class="md:text-[1rem] md:leading-[1rem] h-[10rem] pr-[0.2rem] md:w-[41.5rem] md: overflow-y-scroll overflow-x-hidden">
+                        <div>
+                          <p class="modal-photo-details-info-p">The Alfa Romeo Stelvio (Type 949) is a car produced by the Italian manufacturer Alfa Romeo since 2016. As a D-segment model it slots above the smaller Tonale model in the marque's SUV range. A compact crossover SUV, it was first revealed at the 2016 Los Angeles Auto Show, introduced by a 60" short film directed by Louis Sebastian Pane, and entered production at the Cassino Plant at the end of 2016. In 2018 it was Alfa Romeo's best-selling model, with roughly 43,000 sold that year.</p>
+                        </div>
+                        <div>
+                          <p class="modal-photo-details-info-p2">The Stelvio uses the same Giorgio platform already used by the Giulia,but slightly modified and raised by 22 cm (8.7 in).The Stelvio also shares the same engines and most of the mechanics, including a carbon-fibre driveshaft. In addition, its track width has increased by 2.9 cm (1.1 in) in the rear and 5.4 cm (2.1 in) in the front. It has a boot capacity of 525 L (18.5 cu ft).The boot sill is aligned with the rear bumper and cargo does not need to be lifted over a lip when being removed. There are large vehicle blind spots behind the car's pillars.It has a 50/50 weight distribution and a drag coefficient of 0.32 (Cd).Euro NCAP classify it as a large off-road car.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pl-[1.5rem]">
+                    <div class="modal-photo-details-ainfo bg-[#ffff] w-[100%] md:h-[5rem] md:px-[1.7rem] md:pt-[0.5rem] text-dark text-start md:leading-6">
+                      <div class="md:text-[1.5rem] font-bold  uppercase">Additional Information</div>
+                      <div class="flex">
+                        <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                          <span class="d-none d-lg-block">Resolution : 3440 X 1440</span> 
+                          <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-desktop"></i> : 3440 X 1440</span>
+                        </div>
+                        <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                          <span class="d-none d-lg-block">Settings : ULTRA</span> 
+                          <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-sliders"></i> : ULTRA</span>
+                        </div>
+                        <div class="md:text-[1rem] font-semibold">
+                          <span class="d-none d-lg-block">Render : 5K</span> 
+                          <span class="d-sm-block d-md-none d-lg-none"><i class="fa-regular fa-image"></i> : 5K</span>
+                        </div>
+                      </div>
+                      <div class="flex md:-mt-[0.4rem]">
+                        <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                          <span class="d-none d-lg-block">Game : GTA 5 FIVEM</span>
+                          <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-gamepad"></i> : GTA 5 FIVEM</span>
+                        </div>
+                        <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                          <span class="d-none d-lg-block">Server : FiveM SpeedLab WL</span>
+                          <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-server"></i> : FiveM SpeedLab WL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-1/3">
+                  <div class="absolute">
+                    <div class="modal-photo-credits-border relative border-l-[0.3rem] top-[1rem] h-[13rem] md:left-[-0.24rem]"></div>
+                  </div>
+                  <div class="modal-photo-credits mt-[1rem]">
+                    <div class="text-start md:pl-[2rem] md:pt-[2.3rem] md:leading-7">
+                      <div class="modal-photo-credits-author text-[1.3rem] mb-[1rem]">
+                        <div class="uppercase font-bold">Author</div>
+                        <div class="font-semibold">JRVP08</div>
+                      </div>
+                      <div class="modal-photo-credits-date text-[1.3rem] mb-[1rem]">
+                        <div class="uppercase font-bold">Date</div>
+                        <div class="font-semibold">03/11/2025</div>
+                      </div>
+                      <div class="modal-photo-credits-mods text-[1.3rem]">
+                        <div class="uppercase font-bold">Mods</div>
+                        <div class="font-semibold">
+                          <div>QUANT V</div>
+                          <div>SG PROJECT</div>
+                          <div>LA REVO</div>
+                          <div>5Real</div>
+                          <div>ENB</div>
+                          <div>RESHADE</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-none d-sm-block" >
+                <div data-section="latestphoto" data-section-index="2" class="modal-photo-details hidden animate__animated duration-300 md:w-[69.1rem] md:h-[29rem] md:px-[1rem] md:pt-[1rem] text-white md:absolute top-4 overflow-x-hidden">
+                  <div class="relative flex justify-center text-center">
+                    
+                    <div class="w-2/3">
+                      <div class="px-[1.5rem]">
+                        <div class="modal-photo-details-title md:text-[3.5rem] border-b-[0.2rem] md:w-[35rem] font-semibold md:mb-[1.8rem]">Alfa Romeo Stelvio</div>
+                        <div class="modal-photo-details-info md:leading-8 md:pl-[1rem] md:mb-[2rem] text-start">
+                          <div class="md:text-[1rem] md:leading-[1rem] h-[10rem] pr-[0.2rem] md:w-[41.5rem] md: overflow-y-scroll overflow-x-hidden">
+                            <div>
+                              <p class="modal-photo-details-info-p">The Alfa Romeo Stelvio (Type 949) is a car produced by the Italian manufacturer Alfa Romeo since 2016. As a D-segment model it slots above the smaller Tonale model in the marque's SUV range. A compact crossover SUV, it was first revealed at the 2016 Los Angeles Auto Show, introduced by a 60" short film directed by Louis Sebastian Pane, and entered production at the Cassino Plant at the end of 2016. In 2018 it was Alfa Romeo's best-selling model, with roughly 43,000 sold that year.</p>
+                            </div>
+                            <div>
+                              <p class="modal-photo-details-info-p2">The Stelvio uses the same Giorgio platform already used by the Giulia,but slightly modified and raised by 22 cm (8.7 in).The Stelvio also shares the same engines and most of the mechanics, including a carbon-fibre driveshaft. In addition, its track width has increased by 2.9 cm (1.1 in) in the rear and 5.4 cm (2.1 in) in the front. It has a boot capacity of 525 L (18.5 cu ft).The boot sill is aligned with the rear bumper and cargo does not need to be lifted over a lip when being removed. There are large vehicle blind spots behind the car's pillars.It has a 50/50 weight distribution and a drag coefficient of 0.32 (Cd).Euro NCAP classify it as a large off-road car.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pl-[1.5rem]">
+                        <div class="modal-photo-details-ainfo bg-[#ffff] w-[100%] md:h-[5rem] md:px-[1.7rem] md:pt-[0.5rem] text-dark text-start md:leading-6">
+                          <div class="md:text-[1.5rem] font-bold  uppercase">Additional Information</div>
+                          <div class="flex">
+                            <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                              <span class="d-none d-lg-block">Resolution : 3440 X 1440</span> 
+                              <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-desktop"></i> : 3440 X 1440</span>
+                            </div>
+                            <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                              <span class="d-none d-lg-block">Settings : ULTRA</span> 
+                              <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-sliders"></i> : ULTRA</span>
+                            </div>
+                            <div class="md:text-[1rem] font-semibold">
+                              <span class="d-none d-lg-block">Render : 5K</span> 
+                              <span class="d-sm-block d-md-none d-lg-none"><i class="fa-regular fa-image"></i> : 5K</span>
+                            </div>
+                          </div>
+                          <div class="flex md:-mt-[0.4rem]">
+                            <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                              <span class="d-none d-lg-block">Game : GTA 5 FIVEM</span>
+                              <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-gamepad"></i> : GTA 5 FIVEM</span>
+                            </div>
+                            <div class="mr-[0.4rem] md:text-[1rem] font-semibold">
+                              <span class="d-none d-lg-block">Server : FiveM SpeedLab WL</span>
+                              <span class="d-sm-block d-md-none d-lg-none"><i class="fa-solid fa-server"></i> : FiveM SpeedLab WL</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="w-1/3">
+                      <div class="absolute">
+                        <div class="modal-photo-credits-border relative border-l-[0.3rem] top-[1rem] h-[13rem] md:left-[-0.24rem]"></div>
+                      </div>
+                      <div class="modal-photo-credits mt-[1rem]">
+                        <div class="text-start md:pl-[2rem] md:pt-[2.3rem] md:leading-7">
+                          <div class="modal-photo-credits-author text-[1.3rem] mb-[1rem]">
+                            <div class="uppercase font-bold">Author</div>
+                            <div class="font-semibold">JRVP08</div>
+                          </div>
+                          <div class="modal-photo-credits-date text-[1.3rem] mb-[1rem]">
+                            <div class="uppercase font-bold">Date</div>
+                            <div class="font-semibold">03/11/2025</div>
+                          </div>
+                          <div class="modal-photo-credits-mods text-[1.3rem]">
+                            <div class="uppercase font-bold">Mods</div>
+                            <div class="font-semibold">
+                              <div>QUANT V</div>
+                              <div>SG PROJECT</div>
+                              <div>LA REVO</div>
+                              <div>5Real</div>
+                              <div>ENB</div>
+                              <div>RESHADE</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal latest section -->
+
+    <!-- gallery modal game1 -->
+    <div class="modal fade" id="game1Modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content" style="border-radius: 0px;">
+          <div class="modal-body h-[100] flex justify-center items-center p-0">
+
+            <div class="h-100 w-[50%] bg-danger p-[1rem]">
+              <div class="text-[3rem] font-semibold leading-13">Welcome <br> To the FiveM <br> Photo collection</div>
+              <div class="mt-[0.5rem] mb-[1rem] text-[1rem]">Collection of frozen time in the world of FiveM</div>
+              <div class="text-[1rem] font-bold">Updates: </div>
+              <div class="">
+                <div class="">Toyota Supra - 01/01/2025</div>
+                <div class="">Toyota Supra - 01/01/2025</div>
+                <div class="">Toyota Supra - 01/01/2025</div>
+                <div class="">Toyota Supra - 01/01/2025</div>
+              </div>
+            </div>
+
+            <div class="h-100 w-100 bg-warning">
+              test
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- gallery modal game1 -->
+
+    <!-- modals section -->
    
   </body>             
          
