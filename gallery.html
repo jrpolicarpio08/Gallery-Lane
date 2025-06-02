@@ -677,24 +677,25 @@
                     <div class="text-[3rem] leading-[2.5rem] mt-[2rem] md:mt-[1rem] md:text-[5rem] md:leading-[5rem] text-uppercase font-semibold ">Message</div>
                     <div class="text-[3rem] leading-[3rem] md:text-[5rem] md:leading-[5rem] text-uppercase font-semibold ">The Author</div>
                     <div class="md:text-[1.5rem] font-semibold italic">request, suggestion and collaboration </div>
-                    <div>
-                      <form>
-                        <div class="mt-[1rem] mb-[1rem]">
-                          <input type="email" class="form-control" id="exampleInputEmail1" value="E-mail" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>                          
-                        <select class="form-select" aria-label="Default select example">
-                          <option selected>Choose a subject</option>
-                          <option value="1">Request</option>
-                          <option value="2">Suggestions</option>
-                          <option value="3">Collaboration</option>
-                        </select>
-                        <div class="mb-[1rem] mt-[0.5rem]">
-                          <label for="exampleFormControlTextarea1" class="form-label">Message ( required )</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-[100%]">Submit</button>
-                      </form>
+                    <div class="form-group">
+                      <div class="mt-[1rem] mb-[0.5rem]">
+                        <input type="text" class="form-control" id="name" placeholder="Name" aria-describedby="nameHelp">
+                      </div>
+                      <div class="mt-[1rem] mb-[0.5rem]">
+                        <input type="email" class="form-control" id="email" placeholder="E-mail" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>                          
+                      <select id="subject" class="form-select" required>
+                        <option value="" selected>Choose a subject</option>
+                        <option value="Request">Request</option>
+                        <option value="Suggestions">Suggestions</option>
+                        <option value="Collaboration">Collaboration</option>
+                      </select>
+                      <div class="mb-[1rem] mt-[0.5rem]">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message ( required )</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary w-[100%]" onclick="sendMail()" >Submit</button>
                     </div>
                   </div>
                 </div>
@@ -986,6 +987,9 @@
    
   </body>             
          
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript"> (function(){  emailjs.init({ publicKey: "LNDEgNH5rfcLtPsX3", }); })(); </script>
+  <script src="./js/contact-mailer.js" defer></script>
   <script src="./js/gallery-script.js" defer></script>
   <script src="./js/gallery-game-btn-script.js" defer></script>
   <script src="./js/gallery-scroll-script.js" defer></script>
