@@ -265,6 +265,10 @@ body{ scroll-behavior: smooth;}
     .game-img-container{ padding: 0rem 0.5rem 0rem 0.5rem; }
 
     .game-scroll-btn{ opacity: 1; }
+    
+    .socials-container{
+        height: 20%;
+    }
 }
 
 @media screen and (height: 667px) { 
