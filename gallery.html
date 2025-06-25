@@ -67,12 +67,12 @@
           <div class="carousel-inner">
 
             <!-- home screen -->
-            <div class="carousel-item active py-5 px-3 md:p-5">
+            <div class="carousel-item active py-5 px-3 md:p-5 active">
               <div class="w-[100%] h-[100%] mt-[1rem] text-white flex flex-col md:flex-row">
                 <div class="h-[50%] md:h-[100%] w-[100%]">
                   <div class="main-box bg-primary h-[100%] md:h-[50%] w-[100%] flex justify-start items-center px-[1rem] md:px-[3rem] animate__animated animate__fadeInDownBig animate__delay-0.5s">
                     <div class="main-box-container">
-                      <div class="mb-[0.5rem] font-semibold text-[2rem] md:text-[5rem] md:leading-25">Gallery Lane</div>
+                      <div class="mb-[0.5rem] font-semibold text-[2rem] md:text-[5rem] md:leading-25 md:mt-[-1.5rem]">Gallery Lane</div>
                       <div class="text-[1rem] mx-[1rem] pl-3 pb-[0.5rem] pt-[0.5rem] border-l-4 leading-5 md:mx-12 md:pt-1 md:leading-9 md:text-[2rem]">Collection Of Frozen Time <br> Virtual Photography</div>
                       <div class="mt-[1rem] md:mt-4 md:pl-3">
                         <input type="button" class="btn border-2 text-white w-[100%] md:w-4/10 main-box-btn" value="Explore" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3"></input>
@@ -80,7 +80,7 @@
                     </div>
                   </div>
                   <div class="h-[100%] md:h-[50%] w-[100%] mt-[0.8rem] flex flex-col md:flex-row justify-center items-center">
-                    <div class="h-[100%] w-[100%] md:w-[75%] bg-warning flex justify-end items-center px-[1rem] md:px-[3rem] animate__animated animate__fadeInLeftBig animate__delay-1s">
+                    <div class="latest-box h-[100%] w-[100%] md:w-[75%] bg-warning flex justify-end items-center px-[1rem] md:px-[3rem] animate__animated animate__fadeInLeftBig animate__delay-1s">
                       <div class="text-end latest-box-container mt-[-1rem] md:mt-[0rem]">
                         <div class="font-semibold text-[2rem] md:text-[5rem] md:leading-25 mb-[0.5rem]">Updates</div>
                         <div class="text-[1rem] mx-[1rem] pr-3 pb-[0.5rem] md:pt-[0.5rem] md:pt-1 md:mx-12 md:pb-[1rem] border-r-4 md:leading-9 md:text-[2rem]">Latest Exploration</div>
@@ -111,7 +111,7 @@
                 </div>
                 <div class="latest-photo-container md:h-[20rem] md:w-[55rem] 2xl:h-[40rem] 2xl:w-[100rem] px-2 ">
                   <div class="border-10 border-white flex justify-center items-center">
-                    <input type="image" src="./assets/images/latest.png" class="w-100" data-bs-toggle="modal" data-bs-target="#latestPhotoModal"> 
+                    <input type="image" src="./assets/images/latest.png" class="size-full" data-bs-toggle="modal" data-bs-target="#latestPhotoModal"> 
                   </div>
                   <div class="relative pointer-events-none text-white">
                     <div class="absolute mt-[-3rem] ml-[1rem] md:ml-[2rem] md:mt-[-5.5rem] 2xl:mt-[-10rem] latest-photo-title">
@@ -125,7 +125,7 @@
             <!-- latest screen -->
 
             <!-- gallery screen -->
-            <div class="carousel-item active">
+            <div class="carousel-item">
               <div class="gallery-container latest-page h-[100%] w-[100%]">
 
                 <!-- fivem -->
@@ -199,7 +199,7 @@
                         </div>
                       </div>
                       <div class="game-img-container h-[85%] flex justify-start items-center animate__animated animate__fadeIn animate__delay-1s">
-                        <input type="image" src="./assets/images/latest.png" class="w-100 h-100" data-bs-toggle="modal" data-bs-target="#latestPhotoModal">
+                        <input type="image" src="./assets/images/latest.png" class="size-full" data-bs-toggle="modal" data-bs-target="#latestPhotoModal">
                       </div>
                     </div>
 
@@ -221,7 +221,7 @@
                         </div>
                       </div>
                       <div class="game-img-container h-[85%] flex justify-start items-center animate__animated animate__fadeIn animate__delay-1s">
-                        <input type="image" src="./assets/images/rx8.png" class="w-100 h-100" data-bs-toggle="modal" data-bs-target="#game1Modal">
+                        <input type="image" src="./assets/images/rx8.png" class="size-full" data-bs-toggle="modal" data-bs-target="#game1Modal">
                       </div>
                     </div>
 
@@ -243,7 +243,7 @@
                         </div>
                       </div>
                       <div class="game-img-container h-[85%] flex justify-start items-center animate__animated animate__fadeIn animate__delay-1s">
-                        <input type="image" src="./assets/images/gr86.png" class="w-100 h-100" data-bs-toggle="modal" data-bs-target="#game1Modal">
+                        <input type="image" src="./assets/images/gr86.png" class="size-full" data-bs-toggle="modal" data-bs-target="#game1Modal">
                       </div>
                     </div>
 
@@ -378,7 +378,7 @@
                         </div>
                       </div>
                       <div class="game-img-container h-[85%] flex justify-start items-center animate__animated animate__fadeIn animate__delay-1s">
-                        <input type="image" src="./assets/images/latest.png" class="w-100 h-100" data-bs-toggle="modal" data-bs-target="#latestPhotoModal">
+                        <input type="image" src="./assets/images/lfp1.png" class="w-100 h-100" data-bs-toggle="modal" data-bs-target="#latestPhotoModal">
                       </div>
                     </div>
 
@@ -665,7 +665,8 @@
                 </div>
                 <!-- minecraft -->
 
-                <div id="scroll-section1" data-images-per-set="3" data-animation-type="horizontal" class="scroll-section absolute md:right-10 bottom-1 md:bottom-5 flex justify-center md:justify-end h-[15%] w-[91%] md:w-[25%] p-2 animate__animated animate__fadeInUp animate__delay-1s">
+                <!-- game nav -->
+                <div id="scroll-section1" data-images-per-set="1" data-animation-type="horizontal" class="scroll-section absolute md:right-10 bottom-1 md:bottom-5 flex justify-center md:justify-end h-[15%] w-[91%] md:w-[25%] p-2 animate__animated animate__fadeInUp animate__delay-1s">
                   <div class="game-scroll-btn flex justify-center items-center">
                     <button class="scrollUp btn modal-btn-title border-0">
                       <span class="text-[1.5rem] text-[black] game-scroll-btn-icon">
@@ -676,6 +677,28 @@
                   
                   <div class="game-items-container flex justify-center items-center">
                     <div class="game-item">
+                      <button id="gamebtn1" class="btn border-0 active">
+                        <img class="game-btn invert h-[3rem]" src="./assets/icons/fivem-logo.png">
+                      </button>
+                      <button id="gamebtn2" class="btn border-0">
+                        <img class="game-btn invert h-[3rem]" src="./assets/icons/cyberpunk-logo.png">
+                      </button>
+                      <button id="gamebtn3" class="btn border-0">
+                        <img class="game-btn h-[3rem]  mt-[0.5rem]" src="./assets/icons/LFP-logo.png">
+                      </button>
+                    </div>
+                    <div class="game-item">
+                      <button id="gamebtn4" class="btn border-0">
+                        <img class="game-btn invert h-[3rem]" src="./assets/icons/fivem-logo.png">
+                      </button>
+                      <button id="gamebtn5" class="btn border-0">
+                        <img class="game-btn invert h-[3rem]" src="./assets/icons/cyberpunk-logo.png">
+                      </button>
+                      <button id="gamebtn6" class="btn border-0">
+                        <img class="game-btn h-[3rem]" src="./assets/icons/minecraft-logo.png">
+                      </button>
+                    </div>
+                    <!-- <div class="game-item">
                       <button id="gamebtn1" class="btn border-0 active">
                         <img class="game-btn invert h-[3rem]" src="./assets/icons/fivem-logo.png">
                       </button>
@@ -694,7 +717,7 @@
                       <button id="gamebtn4" class="btn border-0">
                         <img class="game-btn h-[3rem]" src="./assets/icons/minecraft-logo.png">
                       </button>
-                    </div>
+                    </div> -->
                   </div>
                   
                   <div class="game-scroll-btn flex justify-center items-center">
@@ -705,6 +728,7 @@
                     </button>
                   </div>
                 </div>
+                <!-- game nave -->
                 
               </div>
             </div>

@@ -41,13 +41,18 @@ body{ scroll-behavior: smooth;}
 }
 
 .main-box{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("");
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../assets/images/main-box-cover.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
-
+.latest-box{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../assets/images/updatebox-cover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 
 .latest-box-btn,
 .main-box-btn{ 
@@ -63,6 +68,10 @@ body{ scroll-behavior: smooth;}
 }
 
 .about-box{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../assets/images/abt-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     animation: fadeInUpBig;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;

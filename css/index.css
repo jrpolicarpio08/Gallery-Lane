@@ -2,19 +2,27 @@ section{
     height: 100vh;
     width: 100%;
 }
-.hero-container{
-    background: linear-gradient(rgb(255, 0, 0), rgba(255, 0, 0, 0.333)), linear-gradient(rgba(0, 12, 0, 0.333), #0f05);
+.hero-section{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("../assets/images/index-cover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
+
 .hero{
     font-size: 5rem;
 }
 .sub-hero{
     font-size: 1.5rem;
 }
+.btn-hero{
+    font-weight: bold;
+}
 .btn-hero-container:hover{
     color: #ffff;
 }
 .btn-hero:hover{
-    background-color: black !important;
-    color: #ffff;
+    background-color: white !important;
+    color: black !important;
+    font-weight: bold !important;
 }
