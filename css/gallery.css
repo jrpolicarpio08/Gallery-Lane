@@ -7,7 +7,7 @@ body{ scroll-behavior: smooth;}
 .logo{
     z-index: 100 !important;
     position: absolute;
-    top:  1%;
+        top:  1%;
     right: inherit;
     left: 1%;
 }
