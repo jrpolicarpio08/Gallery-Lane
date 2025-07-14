@@ -48,7 +48,7 @@ body{ scroll-behavior: smooth;}
 }
 
 .latest-box{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../assets/images/updatebox-cover.png");
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../assets/images/updatebox-cover1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -184,8 +184,11 @@ body{ scroll-behavior: smooth;}
     line-height: 1.5rem;
 }
 
-@media screen and (min-width: 360px) and (max-width: 1279px) { 
-    .carousel-indicators [data-bs-target] { width: 1.5rem; }
+@media screen and (min-width: 360px) and (max-width: 1278px) { 
+    .carousel-indicators [data-bs-target] { 
+        width: 2rem; 
+        margin-top: 0.3rem;
+    }
 
     .carousel-indicators .active {
         color: red;
@@ -204,6 +207,20 @@ body{ scroll-behavior: smooth;}
 
     .latest-box-container,
     .main-box-container { width: 100%; }
+
+    .main-box{
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../assets/images/main-box-cover-mobile.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .latest-box{
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../assets/images/updatebox-cover-mobile.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%; 
+    }
 
     .about-box{ margin-top: 1rem; }
 
@@ -277,6 +294,14 @@ body{ scroll-behavior: smooth;}
     
     .socials-container{
         height: 20%;
+    }
+
+    .white-nav button span {
+        color: white !important;
+    }
+
+    .white-nav .active span {
+        color: red !important; 
     }
 }
 
