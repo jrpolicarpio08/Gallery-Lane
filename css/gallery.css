@@ -325,6 +325,10 @@ body{ scroll-behavior: smooth;}
     .photo-h-extender{ margin-top: 11.1%; }
 }
 
+@media screen and (min-width: 1360px) { 
+    .photo-h-extender{ margin-top: 10.37%; }
+}
+
 @media screen and (min-width: 1366px) { 
     .photo-h-extender{ margin-top: 10.4%; }
 }
